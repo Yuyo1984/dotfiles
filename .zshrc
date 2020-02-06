@@ -1,5 +1,5 @@
 # Lines configured by zsh-newuser-install
-export EDITORP=vim #エディタをvimに設定
+export EDITOR=vim #エディタをvimに設定
 export LANG=ja_JP.UTF-8 #文字コードをUTF-8に設定
 
 # プロンプト設定
@@ -58,3 +58,8 @@ bindkey -M menuselect 'l' vi-forward-char
 
 
 # End of lines added by compinstall
+
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init - zsh)"
