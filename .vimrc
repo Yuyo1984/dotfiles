@@ -1,17 +1,43 @@
+" Vundle
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
 
+" let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'cocopon/iceberg.vim'
+Plugin 'itchyny/lightline.vim'
+Plugin 'mattn/emmet-vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'shougo/unite.vim'
+Plugin 'tpope/vim-commentary'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'simeji/winresizer'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'kristijanhusak/vim-hybrid-material'
 
-" !! write plugins here !!
+" The following are examples of different formats supported.
+" （ここは入力例なので略）
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
 
 " ファイルを上書きする前にバックアップを作ることを無効化
 set nowritebackup
@@ -25,6 +51,9 @@ set backspace=indent,eol,start
 set ambiwidth=double
 " wildmenuオプションを有効(vimバーからファイルを選択できる)
 set wildmenu
+
+" 挿入モード解除キーの変更
+inoremap <C-c> <ESC>
 
 "----------------------------------------
 " 検索
@@ -65,8 +94,6 @@ set list
 set listchars=tab:^\ ,trail:~
 " コマンドラインの履歴を10000件保存する
 set history=10000
-" コメントの色を水色
-hi Comment ctermfg=3
 " 入力モードでTabキー押下時に半角スペースを挿入
 set expandtab
 " インデント幅
@@ -138,9 +165,26 @@ if has("autocmd")
     autocmd BufReadPost *
     \ if line("'\"") > 0 && line ("'\"") <= line("$") |
     \   exe "normal! g'\"" |
-    \ endif
+    \ end
   augroup END
 endif
 
-" プラグイン
-Plugin 'mattn/emmet-vim'
+" カラースキーム
+set background=dark
+colorscheme hybrid_material
+" colorscheme iceberg
+
+" ステータスラインの設定
+set showmode " 現在のモードを表示
+set showcmd " 打ったコマンドをステータスラインの下に表示
+set ruler " ステータスラインの右側にカーソルの現在位置を表示する
+
+" 色表示を256色に対応させる
+if !has('gui_running')
+  set t_Co=256
+endif
+
+" Lightlineのカラースキーム
+let g:lightline = {
+    \ 'colorscheme': 'wombat'
+    \ }

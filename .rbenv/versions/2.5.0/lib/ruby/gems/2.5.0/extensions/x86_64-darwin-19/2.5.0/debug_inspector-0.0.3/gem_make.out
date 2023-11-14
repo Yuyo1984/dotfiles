@@ -1,0 +1,15 @@
+current directory: /Users/yuyoyanase/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/debug_inspector-0.0.3/ext/debug_inspector
+/Users/yuyoyanase/.rbenv/versions/2.5.0/bin/ruby -r ./siteconf20200401-7022-1ddc5if.rb extconf.rb
+creating Makefile
+
+current directory: /Users/yuyoyanase/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/debug_inspector-0.0.3/ext/debug_inspector
+make "DESTDIR=" clean
+
+current directory: /Users/yuyoyanase/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/debug_inspector-0.0.3/ext/debug_inspector
+make "DESTDIR="
+compiling debug_inspector.c
+linking shared-object debug_inspector.bundle
+
+current directory: /Users/yuyoyanase/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/debug_inspector-0.0.3/ext/debug_inspector
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 debug_inspector.bundle ./.gem.20200401-7022-66eb79
