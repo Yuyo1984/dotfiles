@@ -1,0 +1,368 @@
+: 1605793832:0;echo $SHELL
+: 1605793832:0;brew install zsh-completions
+: 1605793832:0;ls -a
+: 1605793832:0;cat .viminfo
+: 1605793832:0;ls -l
+: 1605793832:0;brew install git
+: 1605793832:0;ls -a
+: 1605793832:0;git info
+: 1605793832:0;git --help
+: 1605793832:0;git --version
+: 1605793832:0;ls
+: 1605793832:0;mkdir dotfiles
+: 1605793832:0;la
+: 1605793832:0;ls -a
+: 1605793832:0;vim hello.html
+: 1605793832:0;cat hello.html
+: 1605793832:0;cd dotfiles
+: 1605793832:0;touch .zshrc
+: 1605793832:0;ls
+: 1605793832:0;ls -a¬•
+: 1605793832:0;ls -a
+: 1605793832:0;vim
+: 1605793832:0; brew tap sanemat/font
+: 1605793832:0;brew install ricty
+: 1605793832:0;cp -f /usr/local/opt/ricty/share/fonts/Ricty*.ttf ~/Library/Fonts/
+: 1605793832:0;fc-cache -vf
+: 1605793832:0;touch ~/.zshrc
+: 1605793832:0;ls
+: 1605793832:0;ls -a
+: 1605793832:0;git config --global user.name "yuyo1984"
+: 1605793832:0;git config --global user.email yuyoyanase0909@gmail.com
+: 1605793832:0;git config --global core.excludesfile ~/.gitignore
+: 1605793832:0;git config --global core.editor "/usr/local/bin/vim"
+: 1605793832:0;ssh-keygen -t rsa -C yuyoyanase0909@gmail.com
+: 1605793832:0;chmod 600 ~/.ssh/id_rsa
+: 1605793832:0;chmod 600 ~/.ssh/config
+: 1605793832:0;vim ~/.ssh/config
+: 1605793832:0;pbcopy < ~/.ssh/id_rsa.pub
+: 1605793832:0;brew install tig
+: 1605793832:0;tif
+: 1605793832:0;tig
+: 1605793832:0;git clone git@github.com:Yuyo1984/html_lesson.git
+: 1605793832:0;git@github.com:Yuyo1984/html_lesson.git
+: 1605793832:0;git clone git@github.com:Yuyo1984/html_lesson.git
+: 1605793832:0;ls
+: 1605793832:0;cd html_lesson
+: 1605793832:0;tig
+: 1605793832:0;la
+: 1605793832:0;ls -a
+: 1605793832:0;cd ..
+: 1605793832:0;ls -a
+: 1605793832:0;cd dotfiles
+: 1605793832:0;ls
+: 1605793832:0;ls -a
+: 1605793832:0;./install.sh
+: 1605793832:0;vi setup.sh
+: 1605793832:0;chmod +x dotfiles/setup.sh
+: 1605793832:0;ls
+: 1605793832:0;chmod +x setup.sh
+: 1605793832:0;cd ~/dotfiles
+: 1605793832:0;./setup.sh
+: 1605793832:0;vi setup.sh
+: 1605793832:0;chmod +x setup.sh
+: 1605793832:0;./setup.sh
+: 1605793832:0;git init
+: 1605793832:0;git add .
+: 1605793832:0;git commit -m "First Commit"
+: 1605793832:0;git remote add origin git@github.com:Yuyo1984/dotfiles.git
+: 1605793832:0;git push -u origin master
+: 1605793832:0;# Lines configured by zsh-newuser-install\
+export EDITORP=vim #„Ç®„É£Éß„Ç£„Çø„ÇÉ≤vim„Å´Ë®≠ÂÆÉ∫\
+export LANG=ja_JP.UTF-8 #ÊÉ∂ÉßÂ≠É∑„Ç≥„É£º„É£É©„ÇÉ≤UTF-8„Å´Ë®≠ÂÆÉ∫\
+\
+# „É£É∑„É£≠„É£≥„É£É∑„É£É®Ë®≠ÂÆÉ∫\
+PROMPT='[%~:%n] %# '\
+\
+# history\
+HISTFILE=~/work/dotfils/zsh/.zsh_hist\
+HISTSIZE=1000\
+SAVEHIST=1000\
+setopt extended_history #„É£É≤„Çπ„É£É®„É£™„Å´ÂÆÉøËÉÅÉ¨ÊÉπÇÈÉ∂É≥„ÇÇ‰øÉΩÂ≠É∏\
+setopt hist_ignore_dups #ÁÉª¥ÂÉ©É≠„Å®ÂÉ∞É¨„ÅÉ∏„Ç≥„É£Éæ„É£≥„É£É©„ÅØ„É£É≤„Çπ„É£É®„É£™„Å´ËøΩÂÉ™ÉÄ„ÅÉ∑„Å™„ÅÉ§\
+\
+#vi „É£©„Ç§„ÇØ„Å™ÊÉ≥É≠‰ΩÉº„ÅÉ¨„Åß„ÅÉ≠„ÇÉ´\
+bindkey -v\
+# End of lines configured by zsh-newuser-install\
+# The following lines were added by compinstall\
+\
+autoload -Uz compinit\
+compinit\
+\
+#\
+# setopt\
+#\
+\
+# cd„ÅÉ∑„ÅÉøÂÉ•É®„ÅÆ„É£Éß„Ç£„É£¨„ÇØ„É£É®„É£™„ÇÉ≤„É£Éß„Ç£„É£¨„ÇØ„É£É®„É£™„Çπ„Çø„É£É£„ÇØ„Å´ËøΩÂÉ™ÉÄ\
+setopt auto_pushd\
+\
+# pushd„ÅÉ∑„ÅÉø„Å®„ÅÉ≠„ÄÅ„É£Éß„Ç£„É£¨„ÇØ„É£É®„É£™„ÅÉ¨„ÅÉπ„Åß„Å´„Çπ„Çø„É£É£„ÇØ„Å´ÂÉ∞´„Åæ„ÇÉ¨„Å¶„ÅÉ§„ÇÉ¨„Å∞„Çπ„Çø„É£É£„ÇØ„Å´ËøΩÂÉ™ÉÄ„ÅÉ∑„Å™„ÅÉ§\
+setopt pushd_ignore_dups\
+\
+# „Ç≥„É£Éæ„É£≥„É£É©„ÅÆ„Çπ„É£É∫„É£´„ÇÉ≤Ë®ÇÊ≠£„ÅÉπ„ÇÉ´\
+setopt correct\
+\
+# <Tab>„Åß„É£É±„ÇπÂÉ∞É≠„ÅÆË£ÉºÂÆÉ¨ÂÄÉπË£Éº„ÇÉ≤ËÉÅ®Á§∫„ÅÉ∑„ÅÉø„ÅÇ„Å®„ÄÅ\
+# Á∂É∫„ÅÉ±„Å¶<Tab>„ÇÉ≤ÊÉ™º„ÅÉπ„Å®ÂÄÉπË£Éº„ÅÉ´„ÇÉ©„É£É±„ÇπÂÉ∞É≠„ÇÉ≤ÈÅ∏ÊÉ™Éæ„ÅÉπ„ÇÉ´„ÅÉ≥„Å®„ÅÉ¨„Åß„ÅÉ≠„ÇÉ´„ÇÉ®„ÅÉ¶„Å´„Å™„ÇÉ´\
+zstyle ':completion:*:default' menu select=1\
+\
+autoload colors\
+zstyle ':completion:*' list-lolors "${LS_COLORS}"\
+\
+\
+#„Ç®„Ç§„É£™„ÇÉÇ„Çπ\
+alias la='ls -aG'\
+alias ll='ls -lG'\
+alias vz='vim ~/work/dotfiles/zsh/.zshrc'\
+\
+# cd„ÅÆÂæÉ¨„Å´ls„ÇÉ≤ÂÆÉøËÉÅÉ¨\
+chpwd() { ls -ltrG  }\
+\
+# Ë£ÉºÂÆÉ¨ÂÄÉπË£Éº„ÅÆ„É£ÉÅ„É£É´„É£•„É£ºÈÅ∏ÊÉ™Éæ„Åß„ÄÅÁÉøÉÇÂÉ≠∞„Ç≠„É£º„ÅÆ‰ª£„ÇÉØ„ÇÉ™„Å´hjkl„ÅßÁßªÂÉ´ÉµÂÉß∫ÊÉΩ•„ÇÉ´„ÇÉ®„ÅÉ¶„Å´„ÅÉπ„ÇÉ´„ÄÇ\
+zmodload zsh/complist\
+bindkey -M menuselect 'h' vi-backward-char\
+bindkey -M menuselect 'j' vi-down-line-or-history\
+bindkey -M menuselect 'k' vi-up-line-or-history\
+bindkey -M menuselect 'l' vi-forward-char\
+\
+\
+# End of line
+: 1605793832:0;vim .zshrc
+: 1605793832:0;ls
+: 1605793832:0;cd ..
+: 1605793832:0;ls -a
+: 1605793832:0;cd dotfiles
+: 1605793832:0;rm .zshrc
+: 1605793832:0;cd
+: 1605793832:0;mv .zshrc dotfiles
+: 1605793832:0;cd ..
+: 1605793832:0;cd 
+: 1605793832:0;cd dotfiles
+: 1605793832:0;ls
+: 1605793832:0;ls
+: 1605793832:0;ls -a
+: 1605793832:0;vim .zshrc
+: 1605793832:0;git add .
+: 1605793832:0;git commit -m "Write .zshrc"
+: 1605793832:0;git push origin master
+: 1605793832:0;git pull origin master
+: 1605793832:0;git commit -m "Write .zshrc"
+: 1605793832:0;git push origin master
+: 1605793832:0;l
+: 1605793832:0;L
+: 1605793832:0;la
+: 1605793832:0;ls
+: 1605793832:0;cd dotfiles
+: 1605793832:0;las
+: 1605793832:0;ls
+: 1605793832:0;chmod +x dotfiles/setup.sh
+: 1605793832:0;chmod +x setup.sh
+: 1605793832:0;cd ~/dotfiles
+: 1605793832:0;./setup.sh
+: 1605793832:0;cd ..
+: 1605793832:0;ls -a
+: 1605793338:0;cd Java
+: 1605793342:0;exa
+: 1605793349:0;javac Main.java
+: 1605793828:0;cd ..
+: 1605793840:0;cd Java
+: 1605793856:1;javac Main.java
+: 1605793867:0;dir
+: 1605793872:1;exa
+: 1605793878:0;java Main
+: 1605793939:175;vim Cal.java
+: 1605794120:1;javac Cal.java
+: 1605794125:0;java Cal
+: 1605794644:204;vim Parse.java
+: 1605794855:1;javac Parse.java
+: 1605794862:0;java Parse
+: 1605794912:456;vim Dice.java
+: 1605795377:0;javac Dice.java
+: 1605795385:23;vim Dice.java
+: 1605795409:1;javac Dice.java
+: 1605795422:0;java Dice
+: 1605795444:16;vim Dice.java
+: 1605795466:0;java Dice
+: 1605795468:1;javac Dice.java
+: 1605795476:0;java Dice
+: 1605798209:0;cd ..
+: 1605798218:0;exit
+: 1608093120:0;cd /Users/yuyoyanase/Documents/javaquestion
+: 1608093150:0;cd Question15-Polymorphism
+: 1608093177:0;git commit -m "Question15Ëß£„ÅÉ≠ÁµÇ„ÇÉØ„ÇÉ™„Åæ„ÅÉ∑„ÅÉø"
+: 1608705584:0;netstat -nao | findstr 8080
+: 1608705641:0;netstat -nao
+: 1608705646:22;netstat 
+: 1608705870:30;lsof -i -P | grep 8080
+: 1608705917:0;kill -9 18612
+: 1608884019:0;ps -a
+: 1608884079:0;ps -ef|head -n 1;ps -ef|grep java
+: 1609749805:0;lsof -i :8080
+: 1609749819:0;kill -9 19229
+: 1609750924:0;lsof -i :8080
+: 1609750932:0;kill -9 19886
+: 1610459539:0;gcc
+: 1610653432:0;exa
+: 1610653439:0;cd ..
+: 1610653442:0;cd usr
+: 1610653447:0;cd local
+: 1610653450:0;cd include
+: 1610653454:0;cd bits
+: 1610653474:0;git stdc++.h
+: 1610653489:35;vim stdc++.h
+: 1610653936:0;cd ..
+: 1610653943:0;cd //
+: 1610653947:0;cd ..
+: 1610653950:0;exa
+: 1610653953:0;cd .
+: 1610653957:0;cd ..
+: 1610653964:0;cd Users
+: 1610653970:0;cd yuyoyanase
+: 1610653975:0;cd C++
+: 1610653978:0;cd ABC
+: 1610654337:0;cd ~
+: 1610654355:147;brew install gcc
+: 1610654864:0;which g++
+: 1610654895:0;echo $PATH
+: 1610655604:0;mkdir vsc_run
+: 1610655619:0;cd vsc_run
+: 1610655626:15;vim cpp.sh
+: 1610656292:0;chmod +x cpp.sh
+: 1610656298:0;./cpp.sh
+: 1610686121:1;lsof -i :8080
+: 1610686142:0;kill -9 60270
+: 1610692485:0;lsof -i :8080
+: 1610692495:0;kill -9 71323
+: 1611474137:0;ls
+: 1611474156:0;cd C++
+: 1611474160:0;wxa
+: 1611474162:0;exa
+: 1611474164:0;la
+: 1611474173:0;cd ..
+: 1611474175:0;cd..
+: 1611474178:0;ls
+: 1611474183:0;cd yuyoyanase
+: 1611474185:0;la
+: 1611474192:0;cd ..
+: 1611474195:0;cd Shared
+: 1611474203:0;cd
+: 1611474209:0;cd ..
+: 1611474213:0;cd var
+: 1611474239:0;cd folders
+: 1611474245:0;cd bf
+: 1611474249:0;la
+: 1611474260:0;cd ps5srdg905zgbrtpl0dnlbxm0000gn
+: 1611474272:0;cd T
+: 1611474304:0;exa
+: 1611474430:0;cd ..
+: 1611474436:0;cd T//
+: 1611474458:3;vim cc13HZYA.o
+: 1611474471:0;cat cc13HZYA.o
+: 1611474528:0;cd
+: 1611688831:0;cd Java
+: 1611689376:1;javac hb.java
+: 1611689383:0;java hb
+: 1611689412:0;javac hb.java
+: 1611689414:2;java hb
+: 1611689440:0;javac hb.java
+: 1611689442:0;java hb
+: 1611689586:0;javac hb.java
+: 1611689587:237;java hb
+: 1611689831:0;javac hb.java
+: 1611689833:16;java hb
+: 1611689908:0;javac hb.java
+: 1611689910:72;java hb
+: 1611689984:1;javac hb.java
+: 1611689986:3;java hb
+: 1611690018:1;javac hb.java
+: 1611690021:65;java hb
+: 1611690088:0;javac hb.java
+: 1611690089:52;java hb
+: 1611690143:0;javac hb.java
+: 1611690144:53;java hb
+: 1611690199:0;javac hb.java
+: 1611690210:19;java hb
+: 1611690262:1;javac hb.java
+: 1611691785:26;java hb
+: 1611733207:0;cd ~
+: 1611733213:0;open /var
+: 1611734042:0;cd var
+: 1611734045:0;cd ..
+: 1611734049:0;cd var
+: 1611734058:0;cd folders
+: 1611734061:0;cd bf
+: 1611734070:0;cd ps5srdg905zgbrtpl0dnlbxm0000gn
+: 1611734073:0;cd Y
+: 1611734076:0;cd T
+: 1611734098:0;exa
+: 1611734101:0;la
+: 1611734120:0;cat .java_pid19229
+: 1611834118:0;cd !
+: 1611834122:0;cd ~
+: 1614589083:0;ls
+: 1620191287:0;cd '/Users/yuyoyanase/git/Compro/Atcoder/abc';/usr/bin/clear
+: 1620191301:1;javac shiftOnly.java
+: 1620202817:0;git remote -v
+: 1620203301:1;git fetch https://github.com/Yuyo1984/Compro.git
+: 1622128876:0;/Volumes/VirtualBox/VirtualBox_Uninstall.tool ; exit;
+: 1623809779:0;quota
+: 1623809785:0;exit
+: 1635468033:0;cd ..
+: 1635468097:0;defaluts write "Apple Global Domain"
+: 1635468160:0;defaults write "Apple Global Domain" com.apple.mouse.scaling 8
+: 1636721467:0;cd /Library/Audio/Plug-Ins/HAL
+: 1636721485:12;sudo rm -rf BlackHole.driver
+: 1636721509:0;sudo launchctl kickstart -kp system/com.apple.audio.coreaudiod
+: 1652881468:0;/Users/yuyoyanase/opt/anaconda3/bin/jupyter_mac.command ; exit;
+: 1652912071:0;/Users/yuyoyanase/opt/anaconda3/bin/jupyter_mac.command ; exit;
+: 1662896816:0;/Users/yuyoyanase/opt/anaconda3/bin/jupyter_mac.command ; exit;
+: 1662872533:0;/Users/yuyoyanase/opt/anaconda3/bin/jupyter_mac.command ; exit;
+: 1669831722:0;python -u "/Users/yuyoyanase/Python/Notebook.ipynb"
+: 1669831722:0;pyenv shell 3.9.6
+: 1669831498:0;pyenv shell 3.9.6
+: 1669831627:4;pip install --upgrade pip
+: 1669831646:6;python -m pip install numpy
+: 1669832063:7;python -m pip install matplotlib
+: 1669832593:0;python -m pip install pyplot
+: 1670732947:18;python -u "/Users/yuyoyanase/Python/Cookies Exchanges.py"
+: 1670725062:1;python -u "/Users/yuyoyanase/Python/Cookies Exchanges.py"
+: 1670725065:0;4 12 20
+: 1670731740:0;python -u "/Users/yuyoyanase/Python/Cookies Exchanges.py"
+: 1685891149:0;/Users/yuyoyanase/Downloads/learnNim ; exit;
+: 1691637222:0;cd Python
+: 1691637225:0;exa
+: 1691637232:0;cd Pybook
+: 1691637355:575074;python3
+: 1693923005:0;wine nscore016.exe
+: 1693923142:0;cd Downloads
+: 1693923145:0;wine nscore016.exe
+: 1693923366:55;brew tap homebrew/cask-versions
+: 1693923427:211;brew install --cask --no-quarantine wine-stable
+: 1693923734:0;wine nscore016.exe
+: 1693923847:0;man pdfdk
+: 1693923850:0;wine nscore016.exe
+: 1698539237:0;/Volumes/VirtualBox/VirtualBox_Uninstall.tool ; exit;
+: 1698713458:2;diskutil list
+: 1698713523:1;diskutil unMountDisk /dev/disk6
+: 1698713532:0;cd Downloads
+: 1698713537:0;ls
+: 1698713619:0;sudo dd if=ubuntu-20.04.2.0-desktop-amd64.iso of=/dev/r<iDENTIFIER> bs=1m
+: 1698713638:105;sudo dd if=ubuntu-20.04.2.0-desktop-amd64.iso of=/dev/rdisk6 bs=1m
+: 1698769718:5;sudo xcodebuild -license accept
+: 1698769728:0;ls
+: 1698769743:0;csrutil status
+: 1698774503:66;sqlite3 $(sudo find /private/car/folders -name com.apple.dock.launchpad)/db/db
+: 1698774765:179;sqlite3 $(sudo find /private/var/folders -name com.apple.dock.launchpad)/db/db
+: 1698774947:0;killall Dock
+: 1698774962:19;sqlite3 $(sudo find /private/car/folders -name com.apple.dock.launchpad)/db/db
+: 1698801592:0;/Volumes/VirtualBox/VirtualBox_Uninstall.tool ; exit;
+: 1698801637:0;exit
+: 1698802794:0;/Volumes/VirtualBox/VirtualBox_Uninstall.tool ; exit;
+: 1699810777:0;/Users/yuyoyanase/Xmage/mage-full_1/java/jre1.8.0_201.jre/Contents/MacOS/libjli.dylib ; exit;
+: 1699870388:0;.zshrc
+: 1699870391:21;vim .zshrc
+: 1699870484:0;echo Hello
+: 1699870710:0;exa
+: 1699870722:0;source .zprofile
+: 1699870731:0;source .zshrc
+: 1699870820:0;exa

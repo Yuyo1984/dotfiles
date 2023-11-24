@@ -53,7 +53,6 @@ zstyle ':completion:*' list-colors "${LS_COLORS}"
 alias la='ls -aG'
 alias ll='ls -lG'
 alias vz='vim ~/work/dotfiles/zsh/.zshrc'
-alias pa='cd ~/programming/procon-archive'
 
 # cdの後にlsを実行
 # chpwd() { ls -ltrG  }
@@ -184,5 +183,3 @@ function peco-history-selection() {
 
 zle -N peco-history-selection
 bindkey '^R' peco-history-selection
-
-[ -f "/Users/yuyoyanase/.ghcup/env" ] && source "/Users/yuyoyanase/.ghcup/env" # ghcup-env
