@@ -4,5 +4,5 @@ set -e
 
 program="${0##*/}"
 
-export PYENV_ROOT="/Users/yuyoyanase/.pyenv"
+export PYENV_ROOT="/Users/yuyoyanase/dotfiles/.pyenv"
 exec "/usr/local/opt/pyenv/bin/pyenv" exec "$program" "$@"

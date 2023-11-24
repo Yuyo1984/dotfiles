@@ -52,7 +52,7 @@ zstyle ':completion:*' list-colors "${LS_COLORS}"
 #エイリアス
 alias la='ls -aG'
 alias ll='ls -lG'
-alias vz='vim ~/work/dotfiles/zsh/.zshrc'
+alias vz='vim ~/dotfiles/.zshrc'
 alias pa='cd ~/programming/procon-archive'
 
 # cdの後にlsを実行
@@ -70,7 +70,7 @@ bindkey -M menuselect 'l' vi-forward-char
 
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 
-export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$HOME/dotfiles/.rbenv/bin:$PATH"
 eval "$(rbenv init - zsh)"
 
 # コマンドの実行ごとに改行
@@ -121,7 +121,7 @@ function rprompt-git-current-branch {
 setopt prompt_subst
 
 #pyenvのPath設定
-export PYENV_ROOT="$HOME/.pyenv"
+export PYENV_ROOT="$HOME/dotfiles/.pyenv"
 export PATH="$PYENV_ROOT/shims:$PATH"
 eval "$(pyenv init -)"
 
@@ -141,7 +141,7 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 # Go
-export GOPATH=$HOME/go
+export GOPATH=$HOME/programming/go
 export PATH=$PATH:$GOPATH/bin
 
 # tmuxを開始時に起動する
