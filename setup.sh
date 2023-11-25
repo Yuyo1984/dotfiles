@@ -1,6 +1,6 @@
  #!/bin/zsh
 
-  DOT_FILES=(.gem .gemrc .git .gitconfig \
+  DOT_FILES=(.gem .gemrc .gitconfig \
  .procon-gardener .pyenv .rbenv .zprofile .zsh_sessions \
  .zshrc .vimrc .tmux.conf)
 

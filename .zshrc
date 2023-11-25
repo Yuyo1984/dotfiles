@@ -3,6 +3,19 @@ export EDITOR=vim #エディタをvimに設定
 export LANG=ja_JP.UTF-8 #文字コードをUTF-8に設定
 export MAILCHECK=0 #警告を出さなくさせる
 
+typeset -U path PATH
+path=(
+  /opt/homebrew/bin(N-/)
+  /opt/homebrew/sbin(N-/)
+  /usr/bin
+  /usr/sbin
+  /bin
+  /sbin
+  /usr/local/bin(N-/)
+  /usr/local/sbin(N-/)
+  /Library/Apple/usr/bin
+)
+
 # プロンプト設定
 PROMPT='%B%~%b `rprompt-git-current-branch`
 %# '
@@ -70,7 +83,7 @@ bindkey -M menuselect 'l' vi-forward-char
 
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 
-export PATH="$HOME/dotfiles/.rbenv/bin:$PATH"
+export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init - zsh)"
 
 # コマンドの実行ごとに改行
@@ -121,7 +134,7 @@ function rprompt-git-current-branch {
 setopt prompt_subst
 
 #pyenvのPath設定
-export PYENV_ROOT="$HOME/dotfiles/.pyenv"
+export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/shims:$PATH"
 eval "$(pyenv init -)"
 
