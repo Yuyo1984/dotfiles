@@ -20,6 +20,8 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'simeji/winresizer'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'kristijanhusak/vim-hybrid-material'
+Plugin 'davidhalter/jedi-vim'
+Plugin 'cohama/lexima.vim'
 
 " The following are examples of different formats supported.
 " （ここは入力例なので略）
