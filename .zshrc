@@ -17,7 +17,7 @@ path=(
 )
 
 # プロンプト設定
-PROMPT="%F{cyan}%n:%f%F{green}%d%f [%m] 
+PROMPT="%F%B%F{cyan}%~%b%f 
 %% "
 
 
