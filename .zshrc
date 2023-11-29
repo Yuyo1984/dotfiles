@@ -17,8 +17,12 @@ path=(
 )
 
 # プロンプト設定
-PROMPT='%B%~%b `rprompt-git-current-branch`
-%# '
+PROMPT="%F{cyan}%n:%f%F{green}%d%f [%m] 
+%% "
+
+
+# プロンプトの右側(RPROMPT)にメソッドの結果を表示させる
+RPROMPT='`rprompt-git-current-branch`'
 
 # history
 HISTFILE=~/.zsh_history
@@ -109,27 +113,28 @@ function rprompt-git-current-branch {
     st=`git status 2> /dev/null`
     if [[ -n `echo "$st" | grep "^nothing to"` ]]; then
       # 全てcommitされてクリーンな状態
-      branch_status=""
+      branch_status="%F{green}"
     elif [[ -n `echo "$st" | grep "^Untracked files"` ]]; then
       # gitに管理されていないファイルがある状態
-      branch_status=" !"
+      branch_status="%F{red}?"
     elif [[ -n `echo "$st" | grep "^Changes not staged for commit"` ]]; then
       # git addされていないファイルがある状態
-      branch_status=" *"
+      branch_status="%F{red}+"
     elif [[ -n `echo "$st" | grep "^Changes to be committed"` ]]; then
     # git commitされていないファイルがある状態
-      branch_status=" +"
+      branch_status="%F{yellow}!"
     elif [[ -n `echo "$st" | grep "^rebase in progress"` ]]; then
       # コンフリクトが起こった状態
-      echo "%F{red} !!"
+      echo "%F{red}!(no branch)"
       return
     else
       # 上記以外の状態の場合は青色で表示させる
-      branch_status=""
+      branch_status="%F{blue}"
     fi
     # ブランチ名を色付きで表示する
-    echo "($branch_name${branch_status})"
+    echo "${branch_status}[$branch_name]"
 }
+
 # プロンプトが表示されるたびにプロンプト文字列を評価、置換する
 setopt prompt_subst
 
@@ -166,7 +171,7 @@ if [[ ! -n $TMUX && $- == *l* ]]; then
   fi
   create_new_session="Create New Session"
   ID="$ID\n${create_new_session}:"
-  ID="'echo $ID | peco | cut -d: -f1'"
+  ID="`echo $ID | peco | cut -d: -f1`"
   if [[ "$ID" = "${create_new_session}" ]]; then
     tmux new-session
   elif [[ -n "$ID" ]]; then
