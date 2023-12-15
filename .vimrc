@@ -1,3 +1,7 @@
+" 日本語有効化
+set encoding=utf-8
+scriptencoding utf-8
+
 " Vundle
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -12,16 +16,21 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'cocopon/iceberg.vim'
 Plugin 'itchyny/lightline.vim'
-Plugin 'mattn/emmet-vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'shougo/unite.vim'
-Plugin 'tpope/vim-commentary'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'simeji/winresizer'
-Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'kristijanhusak/vim-hybrid-material'
 Plugin 'davidhalter/jedi-vim'
+Plugin 'thinca/vim-quickrun'
+Plugin 'ivanov/vim-ipython'
+Plugin 'guns/xterm-color-table.vim'
+Plugin 'Yggdroot/indentLine'
+Plugin 'bronson/vim-trailing-whitespace'
+Plugin 'scrooloose/syntastic'
+Plugin 'pmsorhaindo/syntastic-local-eslint.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'tacahiroy/ctrlp-funky'
+Plugin 'suy/vim-ctrlp-commandline'
+Plugin 'rking/ag.vim'
+Plugin 'ervandew/supertab'
 Plugin 'cohama/lexima.vim'
+Plugin 'preservim/nerdtree'
 
 " The following are examples of different formats supported.
 " （ここは入力例なので略）
@@ -41,6 +50,9 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+"----------------------------------------
+" 基本設定
+"----------------------------------------
 " ファイルを上書きする前にバックアップを作ることを無効化
 set nowritebackup
 " ファイルを上書きする前にバックアップを作ることを無効化
@@ -137,6 +149,8 @@ set whichwrap=b,s,h,l,<,>,[,],~
 " バッファスクロール
 set mouse=a
 
+"---------------------------------------
+
 " auto reload .vimrc
 augroup source-vimrc
   autocmd!
@@ -171,10 +185,10 @@ if has("autocmd")
   augroup END
 endif
 
+"----------------------------------------
 " カラースキーム
 set background=dark
-colorscheme hybrid_material
-" colorscheme iceberg
+colorscheme iceberg
 
 " ステータスラインの設定
 set showmode " 現在のモードを表示
@@ -190,3 +204,38 @@ endif
 let g:lightline = {
     \ 'colorscheme': 'wombat'
     \ }
+
+" jedi-vimの設定
+let g:jedi#auto_vim_configuration = 0
+let g:jedi#completions_command = "<C-N>"
+
+if !exists('g:neocomplete#force_omni_input_patterns')
+    let g:neocomplete#force_omni_input_patterns = {}
+endif
+
+let g:neocomplete#force_omni_input_patterns.python = 'hw*|[^.t].w*'
+
+" vim-quickrunの設定
+nnoremap <F11> :QuickRun<CR>
+
+let g:quickrun_config = {}
+
+let g:quickrun_config._ = {
+  \ 'outputter/error/success': 'buffer',
+  \ 'outputter/error/error': 'quickfix',
+  \ 'outputter/quickfix/open_cmd': 'copen',
+  \ 'runner': 'vimproc',
+  \ 'runner/vimproc/updatetime': 60,
+  \ 'hook/time/enable': 1
+  \ }
+
+
+
+" for python
+let g:quickrun_config.python = {
+  \ 'command': '~/.pyenv/shims/python',
+  \ 'cmdopt': '-u'
+  \ }
+
+nnoremap <expr><silent> <C-c> quickrun#is_running() ? quickrun#sweep_sessions() : "\<C-c>"
+

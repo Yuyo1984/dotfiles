@@ -17,7 +17,7 @@ path=(
 )
 
 # プロンプト設定
-PROMPT="%F%B%F{cyan}%~%b%f 
+PROMPT="%F{036}%B%~%b%f 
 %% "
 
 
@@ -71,6 +71,11 @@ alias la='ls -aG'
 alias ll='ls -lG'
 alias vz='vim ~/dotfiles/.zshrc'
 alias pa='cd ~/programming/procon-archive'
+alias vim='/usr/local/bin/vim'
+alias ap='cd ~/programming/atcoder-python'
+alias tp='oj t -c "python3 main.py"'
+alias sp='acc s main.py -- -l 5055 -w 0 -y'
+alias sc='~/new.zsh'
 
 # cdの後にlsを実行
 # chpwd() { ls -ltrG  }
@@ -204,3 +209,4 @@ zle -N peco-history-selection
 bindkey '^R' peco-history-selection
 
 [ -f "/Users/yuyoyanase/.ghcup/env" ] && source "/Users/yuyoyanase/.ghcup/env" # ghcup-env
+
