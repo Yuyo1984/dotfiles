@@ -1,0 +1,1016 @@
+: 1705583204:0;bat atcoder-python.code-workspace
+: 1705583210:0;~
+: 1705583212:0;exa
+: 1705583432:4;git clone git@github.com:not522/ac-library-python.git
+: 1705583586:0;ap
+: 1705583598:0;abc
+: 1705583602:0;abc217/c
+: 1705583604:307;cw
+: 1705584044:1;python -m atcoder main.py -o
+: 1705584198:3;python3 main.py
+: 1705584441:902;cw
+: 1705585403:4;python3 main.py
+: 1705585423:73;cw
+: 1705585499:3;python3 main.py
+: 1705585512:1;tp
+: 1705585515:5;sp
+: 1705586433:7;python3 main.py
+: 1705586495:4;spp
+: 1705627279:50;cw
+: 1705627332:2;tp
+: 1705627358:6;spp
+: 1705567338:0;programming/atcoder-python/math-and-algorithm
+: 1705567339:0;exa
+: 1705567350:0;cd
+: 1705567356:0;programming/atcoder-python/math-and-algorithm
+: 1705567362:0;007
+: 1705567364:2;tp
+: 1705567530:0;cd ..
+: 1705571331:19;python3 binary_search.py
+: 1705742537:0;exa
+: 1705742541:0;..
+: 1705742546:0;abc
+: 1705742562:2;open `acc url abc333 abc333_b`
+: 1705550131:0;tmux ls
+: 1705550135:0;tmux Python
+: 1705550142:204674;tmux a -t Python
+: 1705767694:0;pyenv shell pypy3.10-7.3.12
+: 1705767695:41; /usr/bin/env /Users/yuyoyanase/.pyenv/versions/pypy3.10-7.3.12/bin/python /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.14.0/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 62240 -- /Users/yuyoyanase/programming/atcoder-python/main.py 
+: 1705767816:3; cd /Users/yuyoyanase ; /usr/bin/env /Users/yuyoyanase/.pyenv/versions/pypy3.10-7.3.12/bin/python /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.14.0/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 62285 -- /Users/yuyoyanase/programming/atcoder-python/main.py 
+: 1705767833:6;5\
+5 3 2 4 1 cd /Users/yuyoyanase ; /usr/bin/env /Users/yuyoyanase/.pyenv/versions/pypy3.10-7.3.12/bin/python /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.14.0/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 62296 -- /Users/yuyoyanase/programming/atcoder-python/main.py 
+: 1705767842:38; cd /Users/yuyoyanase ; /usr/bin/env /Users/yuyoyanase/.pyenv/versions/pypy3.10-7.3.12/bin/python /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.14.0/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 62307 -- /Users/yuyoyanase/programming/atcoder-python/main.py 
+: 1705767730:0;pyenv shell pypy3.10-7.3.12
+: 1705767730:13;/Users/yuyoyanase/.pyenv/versions/pypy3.10-7.3.12/bin/python
+: 1705767777:0;P = [*map(int, input().split()]
+: 1705932361:0;exit
+: 1705926832:0;pyenv shell pypy3.10-7.3.12
+: 1705926832:2; /usr/bin/env /Users/yuyoyanase/.pyenv/versions/pypy3.10-7.3.12/bin/python /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.14.0/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 52013 -- /Users/yuyoyanase/programming/atcoder-python/main.py 
+: 1705926863:1; cd /Users/yuyoyanase ; /usr/bin/env /Users/yuyoyanase/.pyenv/versions/pypy3.10-7.3.12/bin/python /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.14.0/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 52029 -- /Users/yuyoyanase/programming/atcoder-python/main.py 
+: 1705926886:27; cd /Users/yuyoyanase ; /usr/bin/env /Users/yuyoyanase/.pyenv/versions/pypy3.10-7.3.12/bin/python /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.14.0/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 52043 -- /Users/yuyoyanase/programming/atcoder-python/main.py 
+: 1705926919:0;pyenv shell pypy3.10-7.3.12
+: 1705929810:6;/Users/yuyoyanase/.pyenv/versions/pypy3.10-7.3.12/bin/python /Users/yuyoyanase/programming/atcoder-python/main.py
+: 1705929816:0;T.T
+: 1705929879:2;/Users/yuyoyanase/.pyenv/versions/pypy3.10-7.3.12/bin/python /Users/yuyoyanase/programming/atcoder-python/main.py
+: 1705929881:0;T.T
+: 1705929985:17;/Users/yuyoyanase/.pyenv/versions/pypy3.10-7.3.12/bin/python /Users/yuyoyanase/programming/atcoder-python/main.py
+: 1705750951:0;cd ../..
+: 1705751884:0;abc
+: 1705751885:0;exa
+: 1705751999:10;sc abc337
+: 1705752021:0;abc337
+: 1705752023:0;a
+: 1705752023:206;cw
+: 1705752230:8;tp
+: 1705752239:4;sp
+: 1705752255:0;../b
+: 1705752258:286;cw
+: 1705752545:1;tp
+: 1705752550:11;cw
+: 1705752562:1;tp
+: 1705752564:4;sp
+: 1705752602:0;../c
+: 1705752606:1517;cw
+: 1705754129:5;python3 main.py
+: 1705754166:13;cw
+: 1705754181:9;python3 main.py
+: 1705754210:54;cw
+: 1705754268:5;python3 main.py
+: 1705754307:207;cw
+: 1705754515:7;python3 main.py
+: 1705754559:3;cw
+: 1705754564:5;python3 main.py
+: 1705754578:19;cw
+: 1705754598:6;python3 main.py
+: 1705754608:7;cw
+: 1705754617:4;python3 main.py
+: 1705754654:35;cw
+: 1705754690:1;python3 main.py
+: 1705754693:7;cw
+: 1705754701:4;python3 main.py
+: 1705754721:26;cw
+: 1705754748:5;python3 main.py
+: 1705754794:13;cw
+: 1705754809:0;python3 main.py
+: 1705754835:8;cw
+: 1705754845:9;python3 main.py
+: 1705754874:8;cw
+: 1705754904:0;python3 main.py
+: 1705754928:1571;cw
+: 1705756505:4;python3 main.py
+: 1705756522:1;tp
+: 1705756541:4;sp
+: 1706176334:0;pyenv shell pypy3.10-7.3.12
+: 1706176334:114; /usr/bin/env /Users/yuyoyanase/.pyenv/versions/pypy3.10-7.3.12/bin/python /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.14.0/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 63670 -- /Users/yuyoyanase/programming/atcoder-python/main.py 
+: 1706176559:57; cd /Users/yuyoyanase ; /usr/bin/env /Users/yuyoyanase/.pyenv/versions/pypy3.10-7.3.12/bin/python /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.14.0/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 63736 -- /Users/yuyoyanase/programming/atcoder-python/main.py 
+: 1706176620:117; cd /Users/yuyoyanase ; /usr/bin/env /Users/yuyoyanase/.pyenv/versions/pypy3.10-7.3.12/bin/python /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.14.0/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 63743 -- /Users/yuyoyanase/programming/atcoder-python/main.py 
+: 1706176740:2; cd /Users/yuyoyanase ; /usr/bin/env /Users/yuyoyanase/.pyenv/versions/pypy3.10-7.3.12/bin/python /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.14.0/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 63764 -- /Users/yuyoyanase/programming/atcoder-python/main.py 
+: 1706176749:41; cd /Users/yuyoyanase ; /usr/bin/env /Users/yuyoyanase/.pyenv/versions/pypy3.10-7.3.12/bin/python /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.14.0/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 63772 -- /Users/yuyoyanase/programming/atcoder-python/main.py 
+: 1706176853:203; cd /Users/yuyoyanase ; /usr/bin/env /Users/yuyoyanase/.pyenv/versions/pypy3.10-7.3.12/bin/python /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.14.0/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 63790 -- /Users/yuyoyanase/programming/atcoder-python/main.py 
+: 1706177058:15; cd /Users/yuyoyanase ; /usr/bin/env /Users/yuyoyanase/.pyenv/versions/pypy3.10-7.3.12/bin/python /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.14.0/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 63834 -- /Users/yuyoyanase/programming/atcoder-python/main.py 
+: 1706177351:545; cd /Users/yuyoyanase ; /usr/bin/env /Users/yuyoyanase/.pyenv/versions/pypy3.10-7.3.12/bin/python /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.14.0/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 63887 -- /Users/yuyoyanase/programming/atcoder-python/main.py 
+: 1706177899:22; cd /Users/yuyoyanase ; /usr/bin/env /Users/yuyoyanase/.pyenv/versions/pypy3.10-7.3.12/bin/python /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.14.0/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 64048 -- /Users/yuyoyanase/programming/atcoder-python/main.py 
+: 1706177932:10; cd /Users/yuyoyanase ; /usr/bin/env /Users/yuyoyanase/.pyenv/versions/pypy3.10-7.3.12/bin/python /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.14.0/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 64056 -- /Users/yuyoyanase/programming/atcoder-python/main.py 
+: 1706176481:0;pyenv shell pypy3.10-7.3.12
+: 1706181539:0;/Users/yuyoyanase/.pyenv/versions/pypy3.10-7.3.12/bin/python /Users/yuyoyanase/programming/atcoder-python/main.py
+: 1706181569:3;pip list
+: 1706181583:7;conda list
+: 1706181614:0;conda activate compro
+: 1706181623:1;conda info --envs
+: 1706181633:0;conda activate base
+: 1706181636:0;/Users/yuyoyanase/.pyenv/versions/pypy3.10-7.3.12/bin/python /Users/yuyoyanase/programming/atcoder-python/main.py
+: 1706181668:0;/Users/yuyoyanase/anaconda3/bin/python /Users/yuyoyanase/programming/atcoder-python/main.py
+: 1706177354:0;pyenv shell pypy3.10-7.3.12
+: 1706177354:24; /usr/bin/env /Users/yuyoyanase/.pyenv/versions/pypy3.10-7.3.12/bin/python /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.14.0/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 63891 -- /Users/yuyoyanase/programming/atcoder-python/main.py 
+: 1705937122:1;exa
+: 1705937130:0;ap
+: 1705937154:0;math-and-algorithm
+: 1705937155:0;exa
+: 1706203834:0;~
+: 1706203848:88;brew install mysql
+: 1706187128:0;conda activate base
+: 1706187128:58; /usr/bin/env /Users/yuyoyanase/anaconda3/bin/python /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.22.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 49891 -- /Users/yuyoyanase/programming/atcoder-python/main.py 
+: 1706187187:78; cd /Users/yuyoyanase ; /usr/bin/env /Users/yuyoyanase/anaconda3/bin/python /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.22.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 49920 -- /Users/yuyoyanase/programming/atcoder-python/main.py 
+: 1706357420:10; cd /Users/yuyoyanase ; /usr/bin/env /Users/yuyoyanase/anaconda3/bin/python /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.22.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 57644 -- /Users/yuyoyanase/programming/atcoder-python/abc/abc338/b/main.py 
+: 1706357472:39; cd /Users/yuyoyanase ; /usr/bin/env /Users/yuyoyanase/anaconda3/bin/python /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.22.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 57656 -- /Users/yuyoyanase/programming/atcoder-python/abc/abc338/b/main.py 
+: 1706357514:40; cd /Users/yuyoyanase ; /usr/bin/env /Users/yuyoyanase/anaconda3/bin/python /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.22.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 57672 -- /Users/yuyoyanase/programming/atcoder-python/abc/abc338/b/main.py 
+: 1706357655:54; cd /Users/yuyoyanase ; /usr/bin/env /Users/yuyoyanase/anaconda3/bin/python /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.22.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 57764 -- /Users/yuyoyanase/programming/atcoder-python/abc/abc338/b/main.py 
+: 1706357767:59; cd /Users/yuyoyanase ; /usr/bin/env /Users/yuyoyanase/anaconda3/bin/python /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.22.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 57798 -- /Users/yuyoyanase/programming/atcoder-python/abc/abc338/b/main.py 
+: 1706357852:133; cd /Users/yuyoyanase ; /usr/bin/env /Users/yuyoyanase/anaconda3/bin/python /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.22.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 57816 -- /Users/yuyoyanase/programming/atcoder-python/abc/abc338/b/main.py 
+: 1706357987:26; cd /Users/yuyoyanase ; /usr/bin/env /Users/yuyoyanase/anaconda3/bin/python /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.22.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 57864 -- /Users/yuyoyanase/programming/atcoder-python/abc/abc338/b/main.py 
+: 1706358023:18; cd /Users/yuyoyanase ; /usr/bin/env /Users/yuyoyanase/anaconda3/bin/python /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.22.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 57878 -- /Users/yuyoyanase/programming/atcoder-python/abc/abc338/b/main.py 
+: 1706358338:0; cd /Users/yuyoyanase ; /usr/bin/env /Users/yuyoyanase/anaconda3/bin/python /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.22.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 57982 -- /Users/yuyoyanase/programming/atcoder-python/abc/abc338/b/main.py 
+: 1706187179:0;conda activate base
+: 1706187179:17752; /usr/bin/env /Users/yuyoyanase/anaconda3/bin/python /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.22.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 49912 -- /Users/yuyoyanase/programming/atcoder-python/main.py 
+: 1706181869:0;conda activate base
+: 1706187123:171281;/Users/yuyoyanase/anaconda3/bin/python /Users/yuyoyanase/programming/atcoder-python/main.py
+: 1706358406:0;ap
+: 1706358409:0;abc338
+: 1706358413:0;abc
+: 1706358416:0;abc338/b
+: 1706358417:3;tp
+: 1706358426:6;sp
+: 1706358736:1;tp
+: 1706358776:8;python3 main.py
+: 1706358957:1;tp
+: 1706358960:5;sp
+: 1706479720:0;~
+: 1706479726:15;pip install pudb
+: 1706566850:2;bc
+: 1706566854:0;cb
+: 1706566864:46;python3 main.py
+: 1706566915:1;tp
+: 1706566945:6;python3 main.py
+: 1706655341:0;cd ..
+: 1706655357:0;programming/python
+: 1706655359:0;exa
+: 1706655374:0;cd mathpy
+: 1706655381:0;cd ..
+: 1706655381:0;exa
+: 1706655389:0;cd math_and_algorithm
+: 1706655391:0;exa
+: 1706655396:0;cd ..
+: 1706655399:0;ap
+: 1706655400:0;exa
+: 1706655409:0;cd math-and-algorithm
+: 1706655410:0;exa
+: 1706655436:413;vim bit_linear.py
+: 1706655855:17;python3 bit_linear.py
+: 1706655913:156;vim bit_linear.py
+: 1706656072:6;python3 bit_linear.py
+: 1706656378:181;pudb bit_linear.py
+: 1706656569:31;vim bit_linear.py
+: 1706656651:3;python3 bit_linear.py
+: 1706656655:97;vim bit_linear.py
+: 1706656770:4;python3 bit_linear.py
+: 1706657332:0;exa
+: 1706657340:0;mkdir algo
+: 1706657376:0;mv fib_dp.py binary_search.py bit_linear.py binary_search.py algo
+: 1706657380:0;exa
+: 1706657400:0;mv binary_search_2.py algo
+: 1706657401:0;exa
+: 1706657793:0;cd 106
+: 1706657796:0;cd 016
+: 1706657797:0;exa
+: 1706657799:4;cw
+: 1706657805:0;cd ..
+: 1706657808:0;017
+: 1706657809:3779;cw
+: 1706846097:0;cd ..
+: 1706846099:0;021
+: 1706846100:441;cw
+: 1706846542:2;tp
+: 1706846549:35;cw
+: 1706846586:0;tp
+: 1706846593:24;cw
+: 1706846618:1;tp
+: 1706846620:9;sp
+: 1706846839:0;cd ..
+: 1706964221:25;vim main.py
+: 1706964253:0;python3 main.py
+: 1706964260:11;vim main.py
+: 1706964272:0;python3 main.py
+: 1706964279:64;vim main.py
+: 1706964358:0;python3 main.py
+: 1706964361:9;vim main.py
+: 1706964372:0;python3 main.py
+: 1706964376:18;vim main.py
+: 1706964394:1;tp
+: 1706964398:0;python3 main.py
+: 1706964735:0;conda activate base
+: 1706964754:0;conda activate base
+: 1706964754:493; /usr/bin/env /Users/yuyoyanase/anaconda3/bin/python /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.22.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 51161 -- /Users/yuyoyanase/programming/atcoder-python/abc/abc339/b/main.py 
+: 1706965258:16; cd /Users/yuyoyanase ; /usr/bin/env /Users/yuyoyanase/anaconda3/bin/python /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.22.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 51467 -- /Users/yuyoyanase/programming/atcoder-python/abc/abc339/b/main.py 
+: 1706965238:16; /usr/bin/env /Users/yuyoyanase/anaconda3/bin/python /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.22.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 51455 -- /Users/yuyoyanase/programming/atcoder-python/abc/abc339/b/main.py 
+: 1706975206:0;/Users/yuyoyanase/anaconda3/bin/python /Users/yuyoyanase/programming/atcoder-python/main.py
+: 1706975186:0;echo /bin/zsh
+: 1706975198:0;/usr/bin/python3 /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.22.1/pythonFiles/printEnvVariablesToFile.py /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.22.1/pythonFiles/deactivate/zsh/envVars.txt
+: 1705933083:0;tmux ls
+: 1705933103:1158499;tmux new -s Compro
+: 1707094510:0;tmux ls
+: 1707094522:0;Library
+: 1707094530:0;Services
+: 1707094531:0;exa
+: 1707094556:0;rm ã‚­ãƒ£¼ãƒ£ƒ¾ãƒ£ƒ£ãƒ£ƒ·1èƒ¨ç¤º.workflow
+: 1707094568:0;rm -r ã‚­ãƒ£¼ãƒ£ƒ¾ãƒ£ƒ£ãƒ£ƒ·1èƒ¨ç¤º.workflow
+: 1707094570:0;exa
+: 1707094578:1;rm -r ã‚­ãƒ£¼ãƒ£ƒ¾ãƒ£ƒ£ãƒ£ƒ·2èƒ¨ç¤º.workflow
+: 1707094583:0;rm -r ã‚­ãƒ£¼ãƒ£ƒ¾ãƒ£ƒ£ãƒ£ƒ·3èƒ¨ç¤º.workflow
+: 1707094588:0;rm -r ã‚­ãƒ£¼ãƒ£ƒ¾ãƒ£ƒ£ãƒ£ƒ·4èƒ¨ç¤º.workflow
+: 1707094592:0;rm -r ã‚­ãƒ£¼ãƒ£ƒ¾ãƒ£ƒ£ãƒ£ƒ·èƒ¨ç¤º.workflow
+: 1707094594:0;exa
+: 1707094597:0;~
+: 1707127681:1;exa
+: 1707127845:59;git clone https://github.com/libsdl-org/SDL.git -b SDL2
+: 1707128470:0;exa
+: 1707212431:0;SDL
+: 1707212494:0;exa
+: 1707212826:0;cd ..
+: 1707212827:0;exa
+: 1707212834:0;cd Downloads
+: 1707212835:0;exa
+: 1707212875:0;
+: 1707212891:0;cd ..
+: 1707212894:0;tmux ls
+: 1707212920:94073;tmux new -s Emulate
+: 1707583561:2;/Users/yuyoyanase/anaconda3/bin/python /Users/yuyoyanase/programming/atcoder-python/main.py
+: 1707583563:0;for i in range(N):\
+	V, X, Fo, Fi, Q, R = map(int, input().split())
+: 1707583563:0;	C = Fi * R - Fo * Q
+: 1707583563:0;	if C > 0:\
+		print("Overflow")\
+	elif C < 0:
+: 1707583563:0;		print("Zero")
+: 1707583563:0;	else:
+: 1707583563:0;		print("Safe")
+: 1707583595:2;		/Users/yuyoyanase/anaconda3/bin/python /Users/yuyoyanase/programming/atcoder-python/main.py
+: 1707583597:0;for i in range(N):\
+	V, X, Fo, Fi, Q, R = map(int, input().split())
+: 1707583597:0;	C = Fi * R - Fo * Q
+: 1707583597:0;	if C > 0:\
+		print("Overflow")\
+	elif C < 0:
+: 1707583597:0;		print("Zero")
+: 1707583597:0;	else:
+: 1707583597:0;		print("Safe")
+: 1707583622:2;		/Users/yuyoyanase/anaconda3/bin/python /Users/yuyoyanase/programming/atcoder-python/main.py
+: 1707583624:0;for i in range(N):\
+	V, X, Fo, Fi, Q, R = map(int, input().split())
+: 1707583624:0;	C = Fi * R - Fo * Q
+: 1707583624:0;	if C > 0:\
+		print("Overflow")\
+	elif C < 0:
+: 1707583624:0;		print("Zero")
+: 1707583624:0;	else:
+: 1707583624:0;		print("Safe")
+: 1707585213:9;/Users/yuyoyanase/anaconda3/bin/python /Users/yuyoyanase/programming/atcoder-python/main.py
+: 1707585238:0;3\
+10 5 3 5 3 2\
+10 5 3 4 3 2\
+10 5 2 4 4 2
+: 1707585241:2464;/Users/yuyoyanase/anaconda3/bin/python /Users/yuyoyanase/programming/atcoder-python/main.py
+: 1707571431:0;/Users/yuyoyanase/anaconda3/bin/python /Users/yuyoyanase/programming/atcoder-python/abc/abc340/d/main.py
+: 1707571143:85; /usr/bin/env /Users/yuyoyanase/anaconda3/bin/python /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.22.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 49462 -- /Users/yuyoyanase/programming/atcoder-python/abc/abc340/d/main.py 
+: 1707582309:5; cd /Users/yuyoyanase ; /usr/bin/env /Users/yuyoyanase/anaconda3/bin/python /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.22.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 51430 -- /Users/yuyoyanase/programming/atcoder-python/main.py 
+: 1707582314:0;3
+: 1707582314:0;10 5 3 5 3 2
+: 1707582314:0;10 5 3 4 3 2
+: 1707582314:0;10 5 2 4 4 2
+: 1707588979:10; /usr/bin/env /Users/yuyoyanase/anaconda3/bin/python /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.22.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 53501 -- /Users/yuyoyanase/programming/atcoder-python/abc/abc338/c/main.py 
+: 1707588989:0;800 300
+: 1707588989:1;100 100
+: 1707588990:0;200 10
+: 1707588990:0;2
+: 1707588990:0;800 300
+: 1707588990:0;100 100
+: 1707588990:0;200 10
+: 1707589372:53; cd /Users/yuyoyanase ; /usr/bin/env /Users/yuyoyanase/anaconda3/bin/python /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.22.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 53688 -- /Users/yuyoyanase/programming/atcoder-python/abc/abc338/c/main.py 
+: 1707589425:0;800 300
+: 1707589425:0;100 100
+: 1707589425:0;200 10
+: 1707588631:57; /usr/bin/env /Users/yuyoyanase/anaconda3/bin/python /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.22.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 53281 -- /Users/yuyoyanase/programming/atcoder-python/abc/abc338/c/main.py 
+: 1707588688:0;100 100
+: 1707588688:0;200 10
+: 1707588747:26; cd /Users/yuyoyanase ; /usr/bin/env /Users/yuyoyanase/anaconda3/bin/python /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.22.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 53354 -- /Users/yuyoyanase/programming/atcoder-python/abc/abc338/c/main.py 
+: 1707588773:0;100 100
+: 1707588773:0;200 10
+: 1707588786:36; cd /Users/yuyoyanase ; /usr/bin/env /Users/yuyoyanase/anaconda3/bin/python /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.22.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 53382 -- /Users/yuyoyanase/programming/atcoder-python/abc/abc338/c/main.py 
+: 1707588822:0;100 100
+: 1707588822:0;200 10
+: 1707588825:46; cd /Users/yuyoyanase ; /usr/bin/env /Users/yuyoyanase/anaconda3/bin/python /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.22.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 53401 -- /Users/yuyoyanase/programming/atcoder-python/abc/abc338/c/main.py 
+: 1707588871:0;800 300
+: 1707588871:0;100 100
+: 1707588871:0;200 10
+: 1707588875:112; cd /Users/yuyoyanase ; /usr/bin/env /Users/yuyoyanase/anaconda3/bin/python /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.22.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 53438 -- /Users/yuyoyanase/programming/atcoder-python/abc/abc338/c/main.py 
+: 1707588987:0;100 100
+: 1707588987:0;200 10
+: 1707588994:56; cd /Users/yuyoyanase ; /usr/bin/env /Users/yuyoyanase/anaconda3/bin/python /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.22.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 53514 -- /Users/yuyoyanase/programming/atcoder-python/abc/abc338/c/main.py 
+: 1707589050:0;200 10
+: 1707589054:104; cd /Users/yuyoyanase ; /usr/bin/env /Users/yuyoyanase/anaconda3/bin/python /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.22.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 53532 -- /Users/yuyoyanase/programming/atcoder-python/abc/abc338/c/main.py 
+: 1707589158:0;100 100
+: 1707589158:0;200 10
+: 1707589160:51; cd /Users/yuyoyanase ; /usr/bin/env /Users/yuyoyanase/anaconda3/bin/python /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.22.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 53578 -- /Users/yuyoyanase/programming/atcoder-python/abc/abc338/c/main.py 
+: 1707589211:0;100 100
+: 1707589211:0;200 10
+: 1707589214:29; cd /Users/yuyoyanase ; /usr/bin/env /Users/yuyoyanase/anaconda3/bin/python /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.22.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 53614 -- /Users/yuyoyanase/programming/atcoder-python/abc/abc338/c/main.py 
+: 1707589244:0;100 100
+: 1707589244:0;200 10
+: 1707589246:41; cd /Users/yuyoyanase ; /usr/bin/env /Users/yuyoyanase/anaconda3/bin/python /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.22.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 53631 -- /Users/yuyoyanase/programming/atcoder-python/abc/abc338/c/main.py 
+: 1707589287:0;100 100
+: 1707589287:0;200 10
+: 1707589290:40; cd /Users/yuyoyanase ; /usr/bin/env /Users/yuyoyanase/anaconda3/bin/python /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.22.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 53646 -- /Users/yuyoyanase/programming/atcoder-python/abc/abc338/c/main.py 
+: 1707589330:0;100 100
+: 1707589330:0;200 10
+: 1707589333:48; cd /Users/yuyoyanase ; /usr/bin/env /Users/yuyoyanase/anaconda3/bin/python /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.22.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 53667 -- /Users/yuyoyanase/programming/atcoder-python/abc/abc338/c/main.py 
+: 1707589381:0;100 100
+: 1707589381:0;200 10
+: 1707589427:13; cd /Users/yuyoyanase ; /usr/bin/env /Users/yuyoyanase/anaconda3/bin/python /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.22.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 53714 -- /Users/yuyoyanase/programming/atcoder-python/abc/abc338/c/main.py 
+: 1707589440:0;800 300
+: 1707589440:0;100 100
+: 1707589440:0;200 10
+: 1707589453:32; cd /Users/yuyoyanase ; /usr/bin/env /Users/yuyoyanase/anaconda3/bin/python /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.22.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 53726 -- /Users/yuyoyanase/programming/atcoder-python/abc/abc338/c/main.py 
+: 1707588624:0;/Users/yuyoyanase/anaconda3/bin/python /Users/yuyoyanase/programming/atcoder-python/abc/abc338/c/main.py
+: 1707571134:0;/usr/bin/python3 /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.22.1/pythonFiles/printEnvVariablesToFile.py /Users/yuyoyanase/.cursor/extensions/ms-python.python-2023.22.1/pythonFiles/deactivate/zsh/envVars.txt
+: 1707571121:0;echo /bin/zsh
+: 1707372941:0;tmux ls
+: 1707372957:483631;tmux new -s Python
+: 1707212930:0;cd Downloads
+: 1707212931:0;exa
+: 1707213147:0;mv np2 ~
+: 1707213157:0;mv np2 ..
+: 1707213184:0;mv np2 yuyoyanase
+: 1707213186:0;exa
+: 1707213195:0;mv yuyoyanase np2
+: 1707213273:0;mv ~/Downloads/np2 ~
+: 1707213321:0;cd ..
+: 1707213333:0;mkdir np2
+: 1707213335:0;exa
+: 1707213340:0;exa np2
+: 1707213348:0;cd Downloads
+: 1707213357:0;rm -r np2
+: 1707213359:0;cd ..
+: 1707213929:0;cd np2
+: 1707213931:0;exa
+: 1707213936:0;np2sdl2.app
+: 1707213937:0;exa
+: 1707213940:0;Contents
+: 1707213941:0;exa
+: 1707213945:0;cd MacOS
+: 1707213946:0;exa
+: 1707213949:2;make
+: 1707213965:0;cd ..
+: 1707214185:0;cd ~
+: 1707214187:0;np2
+: 1707214195:0;cd ..
+: 1707214198:0;rm -r np2
+: 1707214504:0;cd ..
+: 1707214508:0;cd yuyoyanase
+: 1707214587:0;Programming
+: 1707214593:0;mkdir Assembly
+: 1707214598:0;cd Assembly
+: 1707214600:0;exa
+: 1707214786:30;brew install nasm
+: 1707214824:4;brew reinstall nasm
+: 1707214886:82;vim helloworld.asm
+: 1707215010:1;nasm -f macho64 -o helloworld.o helloworld.asm
+: 1707215094:0;ld -arch x86_64 -macosx_version_min 10.11 helloworld.o -lSystem
+: 1707215107:0;exa
+: 1707215152:0;ld helloworld.o -macosx_version_min 10.11 -L /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib -lSystem
+: 1707215154:0;exa
+: 1707215162:0;/a.out
+: 1707215169:0;a.out
+: 1707215172:0;exa
+: 1707215177:0;/a.out
+: 1707215180:0;exa
+: 1707215193:0;./a.out
+: 1707215262:0;/a.out
+: 1707215266:0;./a.out
+: 1707215339:0;rm a.out
+: 1707215346:0;rm helloworld.o
+: 1707215353:91;vim helloworld.asm
+: 1707215554:0;mv helloworld.asm helloworld.s
+: 1707215556:0;exa
+: 1707215601:0;cc helloworld.s
+: 1707215624:0;exa
+: 1707215629:0;rm helloworld.s
+: 1707215632:0;exa
+: 1707215721:311;vim helloworld.asm
+: 1707216049:0;nasm -f macho64 helloworld.asm
+: 1707216051:0;exa
+: 1707216149:0;ld -o helloworld helloworld.o
+: 1707216322:0;ld -arch x86_64 -macosx_version_min 10.11 helloworld.o -lSystem
+: 1707216354:0;ld helloworld.o
+: 1707216374:0;ld helloworld.o -macosx_version_min 10.11
+: 1707216384:0;exa
+: 1707216403:0;ld helloworld.o -macosx_version_min 10.11 -L /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib -lSystem\
+
+: 1707216408:0;exa
+: 1707216432:0;ld helloworld.o -macosx_version_min 10.11 -L /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib -lSystem\
+
+: 1707216544:0;ld helloworld.o -o helloworld -lSystem -L/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib
+: 1707216835:1;exa
+: 1707216842:0;rm helloworld.o
+: 1707216850:0;rm helloworld.asm
+: 1707216852:0;exa
+: 1707216940:0;cd ..
+: 1707216943:0;exa
+: 1707566721:0;open `acc url abc340` 
+: 1707665210:0;cd ../../abc274/a
+: 1707665210:132;cw
+: 1707665343:0;tp
+: 1707665344:4;sp
+: 1707665681:0;../../abc275/a
+: 1707665685:51;cw
+: 1707665737:1;tp
+: 1707665738:5;sp
+: 1707665861:0;../../abc276/a
+: 1707665862:248;cw
+: 1707666111:1;tp
+: 1707666118:100;cw
+: 1707666219:0;tp
+: 1707666220:4;sp
+: 1707666275:0;cd ..
+: 1707666280:0;abc277/a
+: 1707666536:8;cw
+: 1707666545:1;tp
+: 1707666546:5;sp
+: 1707666593:0;cd ../../abc278/a
+: 1707666594:75;cw
+: 1707666670:0;tp
+: 1707666671:4;sp
+: 1707666814:0;cd ..
+: 1707666819:0;cd ../abc279/a
+: 1707666820:40;cw
+: 1707666860:1;tp
+: 1707666862:4;sp
+: 1707667041:0;cd ../../abc280/a
+: 1707667041:138;cw
+: 1707667180:1;tp
+: 1707667182:3;sp
+: 1707667223:0;cd ..
+: 1707667228:0;abc281/a
+: 1707667229:30;cw
+: 1707667260:0;tp
+: 1707667265:16;cw
+: 1707667282:1;tp
+: 1707667284:4;sp
+: 1707667307:0;cd ..
+: 1707667314:12;../open.zsh
+: 1707667335:0;cd ..
+: 1707667346:0;abc/abc282/a
+: 1707667347:137;cw
+: 1707667485:0;tp
+: 1707667500:4;sp
+: 1707667648:0;abc283/a
+: 1707667657:0;../../abc283/a
+: 1707667658:20;cw
+: 1707667679:1;tp
+: 1707667680:4;sp
+: 1707667731:0;../..
+: 1707667736:0;abc284/a
+: 1707667737:128;cw
+: 1707667866:1;tp
+: 1707667892:33;cw
+: 1707667925:1;tp
+: 1707667926:4;sp
+: 1707667948:0;cd ../..
+: 1707667957:0;abc285/a
+: 1707668079:83;cw
+: 1707668163:1;tp
+: 1707668164:4;sp
+: 1707668332:0;../../abc286/a
+: 1707668333:373;cw
+: 1707668707:1;tp
+: 1707668745:84;cw
+: 1707668830:1;tp
+: 1707668857:262;cw
+: 1707669120:0;tp
+: 1707669122:3;sp
+: 1707669303:0;../..
+: 1707669310:0;abc287/a
+: 1707669312:109;cw
+: 1707669421:1;tp
+: 1707669422:4;sp
+: 1707669485:0;../../abc288/a
+: 1707669486:36;cw
+: 1707669523:0;tp
+: 1707669524:4;sp
+: 1707669577:0;../../abc289/a
+: 1707669578:228;cw
+: 1707669807:1;tp
+: 1707669847:52;cw
+: 1707669899:1;tp
+: 1707669902:135;cw
+: 1707670037:1;tp
+: 1707670094:31;cw
+: 1707670126:1;tp
+: 1707670202:95;cw
+: 1707670298:1;tp
+: 1707670323:41;cw
+: 1707670364:1;tp
+: 1707670366:4;sp
+: 1707670526:0;cd ..
+: 1707670531:0;abc290/a
+: 1707670532:76;cw
+: 1707670609:1;tp
+: 1707670637:14;cw
+: 1707670652:1;tp
+: 1707670654:7;sp
+: 1707670732:0;../../abc291/a
+: 1707670733:93;cw
+: 1707670826:1;tp
+: 1707670828:4;sp
+: 1707670905:0;cd ../../abc292/a
+: 1707670907:41;cw
+: 1707670949:0;tp
+: 1707670961:11;cw
+: 1707670973:0;tp
+: 1707670974:4;sp
+: 1707671050:0;../..
+: 1707671051:0;../
+: 1707671055:0;open.zsh
+: 1707671059:0;exa
+: 1707671067:20;./open.zsh
+: 1707671119:0;open `acc url abc293 abc293_a\\
+`
+: 1707671146:0;abc/abc293/a
+: 1707671147:146;cw
+: 1707671294:1;tp
+: 1707671311:96;cw
+: 1707671408:0;tp
+: 1707671424:71;cw
+: 1707671495:1;tp
+: 1707671499:81;cw
+: 1707671581:0;tp
+: 1707671582:5;sp
+: 1707671894:0;cd abc294/a
+: 1707671900:0;cd ../../abc294/a
+: 1707671901:9;cw
+: 1707671944:0;cd ../../abc295/a
+: 1707672288:8;cw
+: 1707672297:0;tp
+: 1707672298:4;sp
+: 1707672381:0;cd ../../abc296/a
+: 1707672382:111;cw
+: 1707672494:0;tp
+: 1707672495:4;sp
+: 1707672533:34;cw
+: 1707672597:0;cd ../../abc297/a
+: 1707672598:135;cw
+: 1707672734:1;tp
+: 1707672736:5;sp
+: 1707672789:0;../../abc298/a
+: 1707672830:135;cw
+: 1707672966:1;tp
+: 1707672975:12;cw
+: 1707672988:1;tp
+: 1707672989:4;sp
+: 1707673053:0;../../abc299/a
+: 1707673054:88;cw
+: 1707673143:0;tp
+: 1707673151:19;cw
+: 1707673171:0;tp
+: 1707673199:11;cw
+: 1707673212:1;tp
+: 1707673221:18;cw
+: 1707673240:0;tp
+: 1707673273:26;cw
+: 1707673300:0;tp
+: 1707673313:33;cw
+: 1707673347:1;tp
+: 1707673351:11;cw
+: 1707673363:0;tp
+: 1707673364:4;sp
+: 1707673546:0;../../abc300/a
+: 1707673554:50;cw
+: 1707673605:1;tp
+: 1707673606:4;sp
+: 1707673767:0;../../abc301/a
+: 1707673768:534;cw
+: 1707674303:0;tp
+: 1707674304:7;sp
+: 1707674365:0;cd ../../abc302/a
+: 1707674366:69;cw
+: 1707674446:0;tp
+: 1707674469:20;cw
+: 1707674489:1;tp
+: 1707674491:4;sp
+: 1707674618:0;../../..
+: 1707674623:11;./open.zsh
+: 1707674641:0;abc
+: 1707674645:0;abc303/a
+: 1707674645:430;cw
+: 1707675077:1;tp
+: 1707675081:12;cw
+: 1707675093:1;tp
+: 1707675095:4;sp
+: 1707675248:0;../../abc304/a
+: 1707675249:368;cw
+: 1707675618:0;tp
+: 1707675624:19;cw
+: 1707675643:1;tp
+: 1707675647:70;cw
+: 1707675718:0;tp
+: 1707675726:17;cw
+: 1707675744:0;tp
+: 1707675770:125;cw
+: 1707675896:1;tp
+: 1707675904:92;cw
+: 1707675996:1;tp
+: 1707675998:4;sp
+: 1707676123:0;../../abc305/a
+: 1707676124:239;cw
+: 1707676363:1;tp
+: 1707676364:4;sp
+: 1707676397:101;cw
+: 1707676500:10;python3
+: 1707676512:1;tp
+: 1707676514:4;sp
+: 1707676697:0;cd ../../abc306/a
+: 1707676702:54;cw
+: 1707676756:1;tp
+: 1707676767:3;sp
+: 1707676905:0;../../abc307/a
+: 1707676906:190;cw
+: 1707677096:1;tp
+: 1707677103:16;cw
+: 1707677119:1;tp
+: 1707677121:4;sp
+: 1707677263:0;../../abc308/a
+: 1707677265:230;cw
+: 1707677495:1;tp
+: 1707677497:4;sp
+: 1707677543:0;../../abc309/a
+: 1707677544:217;cw
+: 1707677762:0;tp
+: 1707677765:40;cw
+: 1707677806:1;tp
+: 1707677814:88;cw
+: 1707677903:1;tp
+: 1707677908:57;cw
+: 1707677966:0;tp
+: 1707677976:185;cw
+: 1707678162:0;tp
+: 1707678165:141;cw
+: 1707678306:1;tp
+: 1707678308:4;sp
+: 1707678370:0;../../abc311
+: 1707678372:0;/a
+: 1707678373:0;a
+: 1707678374:114;cw
+: 1707678488:1;tp
+: 1707678490:4;sp
+: 1707678574:0;cd ../../abc314/a
+: 1707678575:186;cw
+: 1707678762:0;tp
+: 1707678766:49;cw
+: 1707678816:0;tp
+: 1707678820:77;cw
+: 1707678897:1;tp
+: 1707678904:160;cw
+: 1707679065:1;tp
+: 1707679072:31;cw
+: 1707679104:1;tp
+: 1707679118:285;cw
+: 1707679404:1;tp
+: 1707679410:6;cw
+: 1707679417:1;tp
+: 1707679418:4;sp
+: 1707679495:0;../../abc315/a
+: 1707679496:195;cw
+: 1707679691:1;tp
+: 1707679696:34;cw
+: 1707679731:1;tp
+: 1707679732:4;sp
+: 1707679892:0;cd ..
+: 1707679900:0;abc310/a
+: 1707679901:117;cw
+: 1707680019:0;tp
+: 1707680020:5;sp
+: 1707680081:0;cd ..
+: 1707680101:0;abc312/a
+: 1707680102:163;cw
+: 1707680266:0;tp
+: 1707680267:5;sp
+: 1707680324:0;../../abc313/1
+: 1707680326:0;../../abc313/a
+: 1707680327:92;cw
+: 1707680420:0;tp
+: 1707680425:41;cw
+: 1707680467:0;tp
+: 1707680482:98;cw
+: 1707680581:0;tp
+: 1707680587:126;cw
+: 1707680713:1;tp
+: 1707680721:69;cw
+: 1707680790:1;tp
+: 1707680798:68;cw
+: 1707680867:0;tp
+: 1707680868:4;sp
+: 1707680907:61;cw
+: 1707680969:0;tp
+: 1707680971:0;ap
+: 1707680977:0;abc/abc313/a
+: 1707680980:5;sp
+: 1707771018:0;ap
+: 1707829169:0;~
+: 1707829171:0;cb
+: 1707829371:6;python3 main.py
+: 1707829382:0;cd ..
+: 1707856386:3;exa
+: 1707856402:0;Programming
+: 1707856408:0;exa
+: 1707856466:0;mkdir automate
+: 1707856470:0;cd automate
+: 1707769178:0;ap
+: 1707769180:0;abc
+: 1707769184:0;abc128/b
+: 1707770187:7;cw
+: 1707913353:2428;python3
+: 1707857863:140377;python3
+: 1708539833:0;exit
+: 1708540364:0;cd ~
+: 1708540367:0;downloads
+: 1708540368:0;exa
+: 1708540439:0;unzip src.zip
+: 1708540441:0;exa
+: 1708540460:0;cp src ../programming/scraping
+: 1708540472:0;cp ./src ../programming/scraping
+: 1708540479:0;cp -r ./src ../programming/scraping
+: 1708540484:0;cd ..
+: 1708631717:0;ap
+: 1708631720:0;abc
+: 1708631727:0;abc204/b
+: 1708631728:86;cw
+: 1708631815:3;tp
+: 1708631821:16;cw
+: 1708631837:1;tp
+: 1708631839:4;sp
+: 1708631917:0;../abc205/b
+: 1708631920:0;../abc205
+: 1708631930:0;../../abc205/b
+: 1708631931:119;cw
+: 1708632051:0;tp
+: 1708632062:67;cw
+: 1708632129:1;tp
+: 1708632144:78;cw
+: 1708632223:1;tp
+: 1708632246:33;cw
+: 1708632279:1;tp
+: 1708632281:4;sp
+: 1708632336:0;../..
+: 1708632343:0;abc207/b
+: 1708632345:228;cw
+: 1708632574:0;tp
+: 1708632585:8;cw
+: 1708632594:0;tp
+: 1708632601:77;cw
+: 1708632678:1;tp
+: 1708632679:5;sp
+: 1708632711:458;cw
+: 1708633170:0;tp
+: 1708633173:12;cw
+: 1708633186:0;tp
+: 1708633193:60;cw
+: 1708633253:1;tp
+: 1708633255:4;sp
+: 1708633297:265;cw
+: 1708633563:0;tp
+: 1708633564:6;sp
+: 1708633825:0;../../abc208/b
+: 1708633826:85;cw
+: 1708633911:1;tp
+: 1708633917:22;cw
+: 1708633939:1;tp
+: 1708633951:11;cw
+: 1708633969:0;cd ../../abc209/b
+: 1708633970:5;cw
+: 1708633976:0;tp
+: 1708633998:15;cw
+: 1708634013:1;tp
+: 1708634014:5;sp
+: 1708634184:0;cd ../../abc210/b
+: 1708634186:126;cw
+: 1708634312:1;tp
+: 1708634315:8;cw
+: 1708634323:1;tp
+: 1708634326:11;cw
+: 1708634337:1;tp
+: 1708634343:57;cw
+: 1708634401:0;tp
+: 1708634402:4;sp
+: 1708634453:0;../../abc211/b
+: 1708634453:117;cw
+: 1708634570:1;tp
+: 1708634576:97;cw
+: 1708634673:1;tp
+: 1708634677:7;cw
+: 1708634686:0;tp
+: 1708634692:76;cw
+: 1708634769:0;tp
+: 1708634772:62;cw
+: 1708634834:1;tp
+: 1708634836:4;sp
+: 1708634977:0;cd ../..
+: 1708634995:0;abc228/b
+: 1708635053:898;cw
+: 1708635951:1;tp
+: 1708635954:17;cw
+: 1708635972:0;tp
+: 1708635973:4;sp
+: 1708636090:0;cd ..
+: 1708636168:0;abc229/b
+: 1708636169:670;cw
+: 1708636887:65;tp
+: 1708636955:42;cw
+: 1708636998:1;tp
+: 1708637000:9;cw
+: 1708637010:1;tp
+: 1708637012:11;cw
+: 1708637024:0;tp
+: 1708637025:3;sp
+: 1708637119:3;cw
+: 1708637122:4;sp
+: 1708637328:11;cw
+: 1708637342:3;sp
+: 1708637496:995;cw
+: 1708639476:0;cd ..
+: 1708639481:0;abc234/b
+: 1708639482:256;cw
+: 1708639739:0;tp
+: 1708639748:33;cw
+: 1708639782:1;tp
+: 1708639805:4;sp
+: 1708641330:0;../../abc235/b
+: 1708641332:127;cw
+: 1708641460:1;tp
+: 1708641483:13;cw
+: 1708641497:0;tp
+: 1708641504:42;cw
+: 1708641547:0;tp
+: 1708641548:5;sp
+: 1708709562:10;brew list
+: 1708709585:4;brew uninstall lima
+: 1708709598:3;brew uninstall docker
+: 1708709674:0;docker pull ubuntu:16.04
+: 1708709719:0;systemctl start docker
+: 1708709726:5;sudo docker ps
+: 1708709766:0;docker --config ~/testconfigs/ ps
+: 1708709877:0;launchctl start docker
+: 1708710003:0;export DOCKER_HOST=unix://$HOME/.docker/sock/docker.sock
+: 1708710093:1;docker pull ubuntu:16.04
+: 1708710235:0;docker ps
+: 1708710242:11;sudo docker ps
+: 1708724767:0;cd ..
+: 1708724770:0;cd ../..
+: 1708724771:0;exa
+: 1708724781:0;math-and-algorithm
+: 1708724783:0;exa
+: 1708724794:0;012
+: 1708724796:110;cw
+: 1708724907:174;tp
+: 1708725089:186;cw
+: 1708725275:1;tp
+: 1708725279:14;cw
+: 1708725295:0;tp
+: 1708725296:6;sp
+: 1708725342:0;cd ../013
+: 1708725533:20;cw
+: 1708725554:0;tp
+: 1708725564:36;cw
+: 1708725601:1;tp
+: 1708725626:5;sp
+: 1708725757:0;cd ../014
+: 1708725804:202;cw
+: 1708726006:1;tp
+: 1708726024:25;cw
+: 1708726050:0;tp
+: 1708726056:50;cw
+: 1708726106:1;tp
+: 1708726108:4;sp
+: 1708726156:726;cw
+: 1708726883:0;tp
+: 1708726892:13;cw
+: 1708726906:1;tp
+: 1708726909:12;cw
+: 1708726921:1;tp
+: 1708726923:5;sp
+: 1708726970:29;cw
+: 1708726999:1;tp
+: 1708727001:7;sp
+: 1708727176:0;cd ../015
+: 1708727178:170;cw
+: 1708727349:1;tp
+: 1708727352:25;cw
+: 1708727378:0;tp
+: 1708727402:32;cw
+: 1708727434:1;tp
+: 1708727436:5;sp
+: 1708727719:0;cd ../016
+: 1708727721:29;cw
+: 1708727756:0;cd ../017
+: 1708727758:653;cw
+: 1708728413:0;cd ..
+: 1708728416:0;cd 016
+: 1708728426:3;cw
+: 1708728436:0;cd ../017
+: 1708728437:1092;cw
+: 1708729530:0;tp
+: 1708729533:459;cw
+: 1708729993:0;tp
+: 1708729998:156;cw
+: 1708730155:0;tp
+: 1708730157:20;cw
+: 1708730216:43;pudb main.py
+: 1708730261:107;cw
+: 1708730368:1;tp
+: 1708730370:5;sp
+: 1708730907:0;cd ../018
+: 1708730908:133;cw
+: 1708731042:0;tp
+: 1708731043:5;sp
+: 1708731081:0;../019
+: 1708731082:326;cw
+: 1708731408:1;tp
+: 1708731410:18;cw
+: 1708731429:0;tp
+: 1708731430:6;sp
+: 1708732276:3;cw
+: 1708732285:0;cd ../020
+: 1708732286:346;cw
+: 1708732633:1;tp
+: 1708732635:5;sp
+: 1708732714:0;tpp
+: 1708732719:0;tp
+: 1708732723:0;tpp
+: 1708732726:0;tkpp
+: 1708732732:4;spp
+: 1708732985:0;cd ../
+: 1708732989:0;cd 021
+: 1708732991:17;cw
+: 1708733027:0;cd ../022
+: 1708733028:531;cw
+: 1708733559:41;tp
+: 1708733602:76;cw
+: 1708733679:0;tp
+: 1708733695:787;cw
+: 1708734483:1;tp
+: 1708734485:6;sp
+: 1708734540:4;spp
+: 1708734659:54;cw
+: 1708734713:1;tp
+: 1708734716:106;cw
+: 1708734823:0;tp
+: 1708734858:637;cw
+: 1708735495:1;tp
+: 1708735498:6;sp
+: 1708743815:0;cd ../023
+: 1708743816:183;cw
+: 1708744000:1;tp
+: 1708744005:5;sp
+: 1708748158:7;../024 |cw
+: 1708748171:0;../024
+: 1708748176:380;cw
+: 1708748558:1;tp
+: 1708748568:0;cd ..
+: 1708748574:18;vim
+: 1708916557:0;e
+: 1709124059:0;ap
+: 1709124064:0;GBContest
+: 1709124070:0;230228
+: 1709124077:327;vim 6.py
+: 1709124424:0;cat 6.py | pbcopy
+: 1709127109:1320;python
+: 1708538275:0;exa
+: 1708538280:0;cd programming
+: 1708538281:1;exa
+: 1708538286:0;scraping
+: 1708538288:0;exa
+: 1708538292:0;ch1
+: 1708538302:161;vim sel-souseki.py
+: 1708538471:1;python sel-souseki.py
+: 1708539354:150;vim books.html
+: 1708539514:613;vim sel-books.py
+: 1708540136:0;python sel-books.py
+: 1708540347:0;tmux ls
+: 1708540357:1121820;tmux new -s Python

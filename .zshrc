@@ -70,12 +70,17 @@ zstyle ':completion:*' list-colors "${LS_COLORS}"
 alias la='ls -aG'
 alias ll='ls -lG'
 alias vz='vim ~/dotfiles/.zshrc'
-alias pa='cd ~/programming/procon-archive'
+alias archive='cd ~/programming/procon-archive'
 alias vim='/usr/local/bin/vim'
 alias ap='cd ~/programming/atcoder-python'
+alias cw='vim main.py'
 alias tp='oj t -c "python3 main.py"'
 alias sp='acc s main.py -- -l 5055 -w 0 -y'
+alias spp='acc s main.py -- --guess-python-interpreter pypy -w 0 -y'
 alias sc='~/new.zsh'
+alias debug='python3 -m pdb main.py'
+alias cb='cd ~/ac-problems-contest-builder'
+alias exa="exa -a --icons --git -h -g"
 
 # cdの後にlsを実行
 # chpwd() { ls -ltrG  }
@@ -150,14 +155,14 @@ eval "$(pyenv init -)"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/yuyoyanase/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/Users/yuyoyanase/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/Users/yuyoyanase/opt/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/yuyoyanase/opt/anaconda3/etc/profile.d/conda.sh"
+    if [ -f "/Users/yuyoyanase/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/yuyoyanase/anaconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/Users/yuyoyanase/opt/anaconda3/bin:$PATH"
+        export PATH="/Users/yuyoyanase/anaconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
@@ -168,32 +173,28 @@ export GOPATH=$HOME/programming/go
 export PATH=$PATH:$GOPATH/bin
 
 # tmuxを開始時に起動する
-if [[ ! -n $TMUX && $- == *l* ]]; then
+# if [[ ! -n $TMUX && $- == *l* ]]; then
   # get the IDs
-  ID="`tmux list-sessions`"
-  if [[ -z "$ID" ]]; then 
-    tmux new-session
-  fi
-  create_new_session="Create New Session"
-  ID="$ID\n${create_new_session}:"
-  ID="`echo $ID | peco | cut -d: -f1`"
-  if [[ "$ID" = "${create_new_session}" ]]; then
-    tmux new-session
-  elif [[ -n "$ID" ]]; then
-    tmux attach-session -t "$ID"
-  else
-    : # Start terminal normally
-  fi
-fi
+  # ID="`tmux list-sessions`"
+  #if [[ -z "$ID" ]]; then 
+    #tmux new-session
+  #fi
+  #create_new_session="Create New Session"
+  #ID="$ID\n${create_new_session}:"
+  #ID="`echo $ID | peco | cut -d: -f1`"
+  #if [[ "$ID" = "${create_new_session}" ]]; then
+    #tmux new-session
+  #elif [[ -n "$ID" ]]; then
+    #tmux attach-session -t "$ID"
+  #else
+    #: # Start terminal normally
+  #fi
+#fi
 
 #ターミナルを256色表示に対応させる
 export TERM=xterm-256color
 
 #export DOCKER_HOST=unix:///var/run/docker.sock
-
-# exaのエイリアス
-alias exa="exa -a --icons --git -h -g"
-
 export DOCKER_HOST=unix://$HOME/.lima/docker/sock/docker.sock
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
@@ -210,3 +211,8 @@ bindkey '^R' peco-history-selection
 
 [ -f "/Users/yuyoyanase/.ghcup/env" ] && source "/Users/yuyoyanase/.ghcup/env" # ghcup-env
 
+# ghの補完
+eval "$(gh completion -s zsh)"
+
+# zの設定
+. `brew --prefix`/etc/profile.d/z.sh

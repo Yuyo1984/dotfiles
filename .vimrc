@@ -31,6 +31,12 @@ Plugin 'rking/ag.vim'
 Plugin 'ervandew/supertab'
 Plugin 'cohama/lexima.vim'
 Plugin 'preservim/nerdtree'
+Plugin 'Shougo/neocomplcache'
+Plugin 'Shougo/neosnippet'
+Plugin 'Shougo/neosnippet-snippets'
+Plugin 'vim-jp/vimdoc-ja'
+Plugin 'brglng/vim-im-select'
+Plugin 'mattn/emmet-vim'
 
 " The following are examples of different formats supported.
 " （ここは入力例なので略）
@@ -111,11 +117,11 @@ set history=10000
 " 入力モードでTabキー押下時に半角スペースを挿入
 set expandtab
 " インデント幅
-set shiftwidth=2
+set shiftwidth=4
 " タブキー押下時に挿入される文字幅を指定
-set softtabstop=2
+set softtabstop=4
 " ファイル内にあるタブ文字の表示幅
-set tabstop=2
+set tabstop=4
 " ツールバーを非表示にする
 set guioptions-=T
 " yでコピーした時にクリップボードに入る
@@ -148,7 +154,8 @@ set nrformats=
 set whichwrap=b,s,h,l,<,>,[,],~
 " バッファスクロール
 set mouse=a
-
+" ルーラーを表示
+set ruler
 "---------------------------------------
 
 " auto reload .vimrc
@@ -193,20 +200,21 @@ colorscheme iceberg
 " ステータスラインの設定
 set showmode " 現在のモードを表示
 set showcmd " 打ったコマンドをステータスラインの下に表示
-set ruler " ステータスラインの右側にカーソルの現在位置を表示する
 
 " 色表示を256色に対応させる
 if !has('gui_running')
   set t_Co=256
 endif
 
-" Lightlineのカラースキーム
+" Lightlineの設定
 let g:lightline = {
     \ 'colorscheme': 'wombat'
     \ }
 
 " jedi-vimの設定
 let g:jedi#auto_vim_configuration = 0
+" let g:jedi#show_function_definition = 0
+let g:jedi#show_call_signatures = 0
 let g:jedi#completions_command = "<C-N>"
 
 if !exists('g:neocomplete#force_omni_input_patterns')
@@ -214,6 +222,9 @@ if !exists('g:neocomplete#force_omni_input_patterns')
 endif
 
 let g:neocomplete#force_omni_input_patterns.python = 'hw*|[^.t].w*'
+" ポップアップを表示しない
+autocmd FileType python setlocal completeopt-=preview
+
 
 " vim-quickrunの設定
 nnoremap <F11> :QuickRun<CR>
@@ -239,3 +250,34 @@ let g:quickrun_config.python = {
 
 nnoremap <expr><silent> <C-c> quickrun#is_running() ? quickrun#sweep_sessions() : "\<C-c>"
 
+" neosnippetの設定
+" Plugin key-mappings.
+imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+smap <C-k>     <Plug>(neosnippet_expand_or_jump)
+xmap <C-k>     <Plug>(neosnippet_expand_target)
+
+" SuperTab like snippets behavior.
+"imap <expr><TAB>
+" \ pumvisible() ? "\<C-n>" :
+" \ neosnippet#expandable_or_jumpable() ?
+" \    "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+\ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+
+" For conceal markers.
+if has('conceal')
+  set conceallevel=2 concealcursor=niv
+endif
+
+" set snippet file dir
+let g:neosnippet#snippets_directory='~/.vim/bundle/neosnippet-snippets/snippets/,~/.vim/snippets'
+
+" set of vim-help
+set helplang=ja,en
+
+" insert抜けた時にIMEオフ
+autocmd InsertLeave * :silent !/usr/local/bin/im-select
+
+" NERDtree
+let NERDTreeWinSize = 20
+nnoremap <silent><C-e> :NERDTreeToggle<CR>
