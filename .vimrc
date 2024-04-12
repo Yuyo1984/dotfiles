@@ -276,7 +276,7 @@ let g:neosnippet#snippets_directory='~/.vim/bundle/neosnippet-snippets/snippets/
 set helplang=ja,en
 
 " insert抜けた時にIMEオフ
-autocmd InsertLeave * :silent !/usr/local/bin/im-select
+" autocmd InsertLeave * :silent !/usr/local/bin/im-select
 
 " NERDtree
 let NERDTreeWinSize = 20

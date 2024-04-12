@@ -82,6 +82,11 @@ alias debug='python3 -m pdb main.py'
 alias cb='cd ~/ac-problems-contest-builder'
 alias exa="exa -a --icons --git -h -g"
 
+# マークダウンファイルを見るコマンド
+function mdview() {
+    markdown $1 | lynx -stdin
+}
+
 # cdの後にlsを実行
 # chpwd() { ls -ltrG  }
 
@@ -194,8 +199,8 @@ export PATH=$PATH:$GOPATH/bin
 #ターミナルを256色表示に対応させる
 export TERM=xterm-256color
 
-#export DOCKER_HOST=unix:///var/run/docker.sock
-export DOCKER_HOST=unix://$HOME/.lima/docker/sock/docker.sock
+export DOCKER_HOST=unix:///var/run/docker.sock
+#export DOCKER_HOST=unix://$HOME/.lima/docker/sock/docker.sock
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
