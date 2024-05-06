@@ -69,6 +69,7 @@ zstyle ':completion:*' list-colors "${LS_COLORS}"
 #エイリアス
 alias la='ls -aG'
 alias ll='ls -lG'
+alias vi='nvim'
 alias vz='vim ~/dotfiles/.zshrc'
 alias archive='cd ~/programming/procon-archive'
 alias vim='/usr/local/bin/vim'
@@ -81,6 +82,9 @@ alias sc='~/new.zsh'
 alias debug='python3 -m pdb main.py'
 alias cb='cd ~/ac-problems-contest-builder'
 alias exa="exa -a --icons --git -h -g"
+alias cn="cargo new --bin"
+alias cr="cargo run"
+alias cb="cargo build"
 
 # マークダウンファイルを見るコマンド
 function mdview() {
@@ -221,3 +225,6 @@ eval "$(gh completion -s zsh)"
 
 # zの設定
 . `brew --prefix`/etc/profile.d/z.sh
+
+# 起動したらRustのパスを通す
+source "$HOME/.cargo/env"
