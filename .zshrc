@@ -228,3 +228,6 @@ eval "$(gh completion -s zsh)"
 
 # 起動したらRustのパスを通す
 source "$HOME/.cargo/env"
+
+export PATH="/usr/local/bin:$PATH"
+export PATH="/opt/homebrew/bin:/usr/local/bin:/Library/Tex/texbin:$PATH"
