@@ -1,7 +1,7 @@
  #!/bin/zsh
 
-  DOT_FILES=(.gem .gemrc .gitconfig \
- .procon-gardener .pyenv .rbenv .zprofile .zsh_sessions \
+  DOT_FILES=(.gitconfig \
+ .zprofile .zsh_sessions \
  .zshrc .vimrc .tmux.conf)
 
  for file in ${DOT_FILES[@]}

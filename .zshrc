@@ -81,7 +81,7 @@ alias spp='acc s main.py -- --guess-python-interpreter pypy -w 0 -y'
 alias sc='~/new.zsh'
 alias debug='python3 -m pdb main.py'
 alias cb='cd ~/ac-problems-contest-builder'
-alias exa="exa -a --icons --git -h -g"
+alias ls="lsd"
 alias cn="cargo new --bin"
 alias cr="cargo run"
 alias cb="cargo build"
@@ -104,10 +104,10 @@ bindkey -M menuselect 'l' vi-forward-char
 
 # End of lines added by compinstall
 
-export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+# export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init - zsh)"
+# export PATH="$HOME/.rbenv/bin:$PATH"
+# eval "$(rbenv init - zsh)"
 
 # コマンドの実行ごとに改行
 function precmd() {
@@ -158,28 +158,28 @@ function rprompt-git-current-branch {
 setopt prompt_subst
 
 #pyenvのPath設定
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/shims:$PATH"
-eval "$(pyenv init -)"
+#export PYENV_ROOT="$HOME/.pyenv"
+#export PATH="$PYENV_ROOT/shims:$PATH"
+#eval "$(pyenv init -)"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/yuyoyanase/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/yuyoyanase/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/yuyoyanase/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/yuyoyanase/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
+# __conda_setup="$('/Users/yuyoyanase/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+# if [ $? -eq 0 ]; then
+#     eval "$__conda_setup"
+# else
+#     if [ -f "/Users/yuyoyanase/anaconda3/etc/profile.d/conda.sh" ]; then
+#        . "/Users/yuyoyanase/anaconda3/etc/profile.d/conda.sh"
+#    else
+#        export PATH="/Users/yuyoyanase/anaconda3/bin:$PATH"
+#    fi
+#fi
+#unset __conda_setup
 # <<< conda initialize <<<
 
 # Go
-export GOPATH=$HOME/programming/go
-export PATH=$PATH:$GOPATH/bin
+# export GOPATH=$HOME/programming/go
+# export PATH=$PATH:$GOPATH/bin
 
 # tmuxを開始時に起動する
 # if [[ ! -n $TMUX && $- == *l* ]]; then
@@ -209,25 +209,25 @@ export DOCKER_HOST=unix:///var/run/docker.sock
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # コマンド履歴検索Pecoの設定
-function peco-history-selection() {
-    BUFFER=`history -n 1 | tail -r  | awk '!a[$0]++' | peco`
-    CURSOR=$#BUFFER
-    zle reset-prompt
-}
+# function peco-history-selection() {
+#    BUFFER=`history -n 1 | tail -r  | awk '!a[$0]++' | peco`
+#    CURSOR=$#BUFFER
+#    zle reset-prompt
+#}
 
-zle -N peco-history-selection
-bindkey '^R' peco-history-selection
+# zle -N peco-history-selection
+# bindkey '^R' peco-history-selection
 
-[ -f "/Users/yuyoyanase/.ghcup/env" ] && source "/Users/yuyoyanase/.ghcup/env" # ghcup-env
+# [ -f "/Users/yuyoyanase/.ghcup/env" ] && source "/Users/yuyoyanase/.ghcup/env" # ghcup-env
 
 # ghの補完
-eval "$(gh completion -s zsh)"
+# eval "$(gh completion -s zsh)"
 
 # zの設定
-. `brew --prefix`/etc/profile.d/z.sh
+# . `brew --prefix`/etc/profile.d/z.sh
 
 # 起動したらRustのパスを通す
-source "$HOME/.cargo/env"
+# source "$HOME/.cargo/env"
 
 export PATH="/usr/local/bin:$PATH"
 export PATH="/opt/homebrew/bin:/usr/local/bin:/Library/Tex/texbin:$PATH"
