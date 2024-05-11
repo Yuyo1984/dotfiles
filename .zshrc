@@ -5,14 +5,14 @@ export MAILCHECK=0 #警告を出さなくさせる
 
 typeset -U path PATH
 path=(
+  /usr/local/bin
+  /usr/local/sbin
   /opt/homebrew/bin(N-/)
   /opt/homebrew/sbin(N-/)
   /usr/bin
   /usr/sbin
   /bin
   /sbin
-  /usr/local/bin(N-/)
-  /usr/local/sbin(N-/)
   /Library/Apple/usr/bin
 )
 
@@ -67,21 +67,22 @@ zstyle ':completion:*' list-colors "${LS_COLORS}"
 
 
 #エイリアス
+alias ls="lsd"
 alias la='ls -aG'
 alias ll='ls -lG'
 alias vi='nvim'
 alias vz='vim ~/dotfiles/.zshrc'
 alias archive='cd ~/programming/procon-archive'
 alias vim='/usr/local/bin/vim'
-alias ap='cd ~/programming/atcoder-python'
+alias ap='cd ~/atcoder-python'
+alias atc='source AtCoder/bin/activate'
 alias cw='vim main.py'
-alias tp='oj t -c "python3 main.py"'
+alias tp='oj t -c "python3 main.py" -d ./tests/'
 alias sp='acc s main.py -- -l 5055 -w 0 -y'
 alias spp='acc s main.py -- --guess-python-interpreter pypy -w 0 -y'
-alias sc='~/new.zsh'
+alias sc='~/atcoder-python/tools/new.zsh'
 alias debug='python3 -m pdb main.py'
 alias cb='cd ~/ac-problems-contest-builder'
-alias ls="lsd"
 alias cn="cargo new --bin"
 alias cr="cargo run"
 alias cb="cargo build"
@@ -230,4 +231,11 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 # source "$HOME/.cargo/env"
 
 export PATH="/usr/local/bin:$PATH"
-export PATH="/opt/homebrew/bin:/usr/local/bin:/Library/Tex/texbin:$PATH"
+#export PATH="/opt/homebrew/bin:/usr/local/bin:/Library/Tex/texbin:$PATH"
+#export PATH="/System/Volumes/Data/Users/user1/Library/Python/3.12/bin:$PATH"
+#export PATH="/Users/user1/Library/Python/3.12/bin:$PATH"
+export PATH="$(brew --prefix python)/libexec/bin:$PATH"
+
+# 入った時にanyenvをリロード
+eval "$(anyenv init -)"
+export PATH="$HOME/.anyenv/bin:$PATH"
