@@ -1,5 +1,12 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # Lines configured by zsh-newuser-install
-export EDITOR=vim #エディタをvimに設定
+export EDITOR=nvim #エディタをnvimに設定
 export LANG=ja_JP.UTF-8 #文字コードをUTF-8に設定
 export MAILCHECK=0 #警告を出さなくさせる
 
@@ -17,12 +24,12 @@ path=(
 )
 
 # プロンプト設定
-PROMPT="%F{036}%B%~%b%f 
-%% "
+#PROMPT="%F{036}%B%~%b%f 
+# %% "
 
 
 # プロンプトの右側(RPROMPT)にメソッドの結果を表示させる
-RPROMPT='`rprompt-git-current-branch`'
+# RPROMPT='`rprompt-git-current-branch`'
 
 # history
 HISTFILE=~/.zsh_history
@@ -71,16 +78,16 @@ alias ls="lsd"
 alias la='ls -aG'
 alias ll='ls -lG'
 alias vi='nvim'
-alias vz='vim ~/dotfiles/.zshrc'
+alias vz='vi ~/dotfiles/.zshrc'
 alias archive='cd ~/programming/procon-archive'
 alias vim='/usr/local/bin/vim'
 alias pabc='cd ~/atcoder-python/abc'
-alias mkCompro='source AtCoder/bin/activate'
-alias cw='nvim main.py'
+alias mkCompro='source ~/Compro/atc-venv/bin/activate'
+alias cw='~/atcoder-python/tools/create_python_template.sh main.py & nvim main.py'
 alias tp='oj t -c "python3 main.py" -d ./test'
 alias sp='acc s main.py -- -l 5055 -w 0 -y --no-open'
 alias spp='acc s main.py -- --guess-python-interpreter pypy -w 0 -y --no-open'
-alias sc='~/atcoder-python/tools/new.zsh'
+alias sc='~/Compro/tools/new.zsh'
 alias sw='acss watch'
 alias debug='python3 -m pdb main.py'
 alias cb='cd ~/ac-problems-contest-builder'
@@ -88,6 +95,7 @@ alias cn="cargo new --bin"
 alias cr="cargo run"
 alias cb="cargo build"
 alias cdcp="bat main.py | pbcopy"
+alias getlib='cp -r ~/Compro/ac-library/atcoder .'
 # マークダウンファイルを見るコマンド
 function mdview() {
     markdown $1 | lynx -stdin
@@ -122,85 +130,8 @@ function precmd() {
   fi
 }
 
-# ブランチ名を状態アイコンと一緒に表示させるメソッド
-function rprompt-git-current-branch {
-    local branch_name st branch_status
-
-    if [ ! -e  ".git" ]; then
-      # gitで管理されていないディレクトリは何も返さない
-      return
-    fi
-    branch_name=`git rev-parse --abbrev-ref HEAD 2> /dev/null`
-    st=`git status 2> /dev/null`
-    if [[ -n `echo "$st" | grep "^nothing to"` ]]; then
-      # 全てcommitされてクリーンな状態
-      branch_status="%F{green}"
-    elif [[ -n `echo "$st" | grep "^Untracked files"` ]]; then
-      # gitに管理されていないファイルがある状態
-      branch_status="%F{red}?"
-    elif [[ -n `echo "$st" | grep "^Changes not staged for commit"` ]]; then
-      # git addされていないファイルがある状態
-      branch_status="%F{red}+"
-    elif [[ -n `echo "$st" | grep "^Changes to be committed"` ]]; then
-    # git commitされていないファイルがある状態
-      branch_status="%F{yellow}!"
-    elif [[ -n `echo "$st" | grep "^rebase in progress"` ]]; then
-      # コンフリクトが起こった状態
-      echo "%F{red}!(no branch)"
-      return
-    else
-      # 上記以外の状態の場合は青色で表示させる
-      branch_status="%F{blue}"
-    fi
-    # ブランチ名を色付きで表示する
-    echo "${branch_status}[$branch_name]"
-}
-
 # プロンプトが表示されるたびにプロンプト文字列を評価、置換する
 setopt prompt_subst
-
-#pyenvのPath設定
-#export PYENV_ROOT="$HOME/.pyenv"
-#export PATH="$PYENV_ROOT/shims:$PATH"
-#eval "$(pyenv init -)"
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-# __conda_setup="$('/Users/yuyoyanase/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-# if [ $? -eq 0 ]; then
-#     eval "$__conda_setup"
-# else
-#     if [ -f "/Users/yuyoyanase/anaconda3/etc/profile.d/conda.sh" ]; then
-#        . "/Users/yuyoyanase/anaconda3/etc/profile.d/conda.sh"
-#    else
-#        export PATH="/Users/yuyoyanase/anaconda3/bin:$PATH"
-#    fi
-#fi
-#unset __conda_setup
-# <<< conda initialize <<<
-
-# Go
-# export GOPATH=$HOME/programming/go
-# export PATH=$PATH:$GOPATH/bin
-
-# tmuxを開始時に起動する
-# if [[ ! -n $TMUX && $- == *l* ]]; then
-  # get the IDs
-  # ID="`tmux list-sessions`"
-  #if [[ -z "$ID" ]]; then 
-    #tmux new-session
-  #fi
-  #create_new_session="Create New Session"
-  #ID="$ID\n${create_new_session}:"
-  #ID="`echo $ID | peco | cut -d: -f1`"
-  #if [[ "$ID" = "${create_new_session}" ]]; then
-    #tmux new-session
-  #elif [[ -n "$ID" ]]; then
-    #tmux attach-session -t "$ID"
-  #else
-    #: # Start terminal normally
-  #fi
-#fi
 
 #ターミナルを256色表示に対応させる
 export TERM=xterm-256color
@@ -220,10 +151,8 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 # zle -N peco-history-selection
 # bindkey '^R' peco-history-selection
 
-# [ -f "/Users/yuyoyanase/.ghcup/env" ] && source "/Users/yuyoyanase/.ghcup/env" # ghcup-env
-
 # ghの補完
-# eval "$(gh completion -s zsh)"
+eval "$(gh completion -s zsh)"
 
 # zの設定
 # . `brew --prefix`/etc/profile.d/z.sh
@@ -241,8 +170,46 @@ export PATH="$(brew --prefix python)/libexec/bin:$PATH"
 eval "$(anyenv init -)"
 export PATH="$HOME/.anyenv/bin:$PATH"
 
-source /Users/user1/atcoder-python/AtCoder/bin/activate
 . "$HOME/.cargo/env"
 
 export PATH="$HOME/.gem/ruby/3.2.0/bin:$PATH"
+export GOPATH="$HOME/go"
+# export PATH="$GOPATH/bin:$PATH"
+export PATH="$HOME/cf_v1.0.0_darwin_64:$PATH"
 
+export PATH="/usr/local/bin:$PATH"
+
+
+### Added by Zinit's installer
+if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
+    print -P "%F{33} %F{220}Installing %F{33}ZDHARMA-CONTINUUM%F{220} Initiative Plugin Manager (%F{33}zdharma-continuum/zinit%F{220})…%f"
+    command mkdir -p "$HOME/.local/share/zinit" && command chmod g-rwX "$HOME/.local/share/zinit"
+    command git clone https://github.com/zdharma-continuum/zinit "$HOME/.local/share/zinit/zinit.git" && \
+        print -P "%F{33} %F{34}Installation successful.%f%b" || \
+        print -P "%F{160} The clone has failed.%f%b"
+fi
+
+source "$HOME/.local/share/zinit/zinit.git/zinit.zsh"
+autoload -Uz _zinit
+(( ${+_comps} )) && _comps[zinit]=_zinit
+
+# Load the pure theme, with zsh-async library that's bundled with it.
+#zinit ice pick"async.zsh" src"pure.zsh"
+#zinit light sindresorhus/pure
+zinit light romkatv/powerlevel10k
+
+# Load a few important annexes, without Turbo
+# (this is currently required for annexes)
+zinit light-mode for \
+    zdharma-continuum/zinit-annex-as-monitor \
+    zdharma-continuum/zinit-annex-bin-gem-node \
+    zdharma-continuum/zinit-annex-patch-dl \
+    zdharma-continuum/zinit-annex-rust
+zinit light zsh-users/zsh-syntax-highlighting
+zinit light zsh-users/zsh-autosuggestions
+zinit light zsh-users/zsh-completions
+zinit light zdharma/history-search-multi-word
+### End of Zinit's installer chunk
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
