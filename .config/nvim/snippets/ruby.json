@@ -1,0 +1,46 @@
+{
+  "Input a word": {
+    "prefix": "IS",
+    "body": "gets.chomp",
+    "description": "Input a word"
+  },
+  "Input a number": {
+    "prefix": "II",
+    "body": ["gets.to_i"],
+    "description": "Input a number"
+  },
+  "Input numbers": {
+    "prefix": "LI",
+    "body": ["gets.split.map(&:to_i)"],
+    "description": ""
+  },
+  "make a list of words": {
+    "prefix": "LS",
+    "body": ["gets.chomp.split"],
+    "description": ""
+  },
+  "Input words": {
+    "prefix": "MS",
+    "body": ["gets.split.map()"],
+    "description": ""
+  },
+  "Get lines of numbers": {
+    "prefix": "ARI",
+    "body": ["Array.new($0) { gets.to_i }"],
+    "description": ""
+  },
+  "get lines of words": {
+    "prefix": "ARS",
+    "body": ["Array.new($0) { gets.chomp }"],
+    "description": ""
+  },
+  "get input splits": {
+    "prefix": "SPI",
+    "body": ["gets.chomp.chars"],
+    "description": ""
+  },
+  "get a grid": {
+    "prefix": "GG",
+    "body": ["Array.new($0) { gets.split.map(&:to_i) }"]
+  }
+}

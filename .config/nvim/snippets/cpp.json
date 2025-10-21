@@ -1,0 +1,21 @@
+{
+  "make a compro template": {
+    "prefix": "setup",
+    "body": [
+      "#include <bits/stdc++.h>",
+      "using namespace std;",
+      "",
+      "int main() {",
+      "  $1",
+      "}"
+    ],
+    "description": ""
+  },
+  "print a result": {
+    "prefix": "output",
+    "body": [
+      "cout << $1 << endl;"
+    ],
+    "description": ""
+  }
+}

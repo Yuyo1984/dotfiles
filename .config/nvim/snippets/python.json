@@ -1,0 +1,112 @@
+{
+  "input a number": {
+    "prefix": "II",
+    "body": "int(input())",
+    "description": " Code snippet to input a number"
+  },
+  "map_for_int": {
+    "prefix": "MI",
+    "body": "map(int, input().split())",
+    "description": "Code snippet to make a map for numbers"
+  },
+  "list_for_int": {
+    "prefix": "LI",
+    "body": "[*map(int, input().split())]",
+    "description": "Code snippet to make a list for numbers"
+  },
+  "list from 0 to x": {
+    "prefix": "LIR",
+    "body": "[int(input()) for i in range($1)]",
+    "description": "Code snippet to make a list for number from 0 to x-1"
+  },
+  "sorted_map for int": {
+    "prefix": "SOI",
+    "body": "sorted(map(int, input().split()))",
+    "description": "Code snippet to make a sorted map"
+  },
+  "set for int": {
+    "prefix": "SEI",
+    "body": "set(map(int, input().split()))",
+    "description": "Code snippet to set of numbers"
+  },
+  "list of words": {
+    "prefix": "LS",
+    "body": "list(input())",
+    "description": "Code snippet to make a list of input()"
+  },
+  "split input": {
+    "prefix": "LSS",
+    "body": "input().split()",
+    "description": "Code snippet to split input()"
+  },
+  "Yes or No": {
+    "prefix": "yn",
+    "body": "print('Yes' if $1 else 'No')",
+    "description": "Code snippet to make Yes or No"
+  },
+  "YES or NO": {
+    "prefix": "YN",
+    "body": "print('YES' if $1 else 'NO')",
+    "description": "Code snippet to make YES or NO"
+  },
+  "join and print": {
+    "prefix": "SP",
+    "body": "print(' '.join($1))",
+    "description": "Code snippet to join characters and print"
+  },
+  "format and print": {
+    "prefix": "FP",
+    "body": "print('{}'.format($1))",
+    "description": "Code snippet to format and print"
+  },
+  "function floor": {
+    "prefix": "floor",
+    "body": "def floor(a, b): return (a+b-1)",
+    "description": "Code snippet to return floor(a, b)"
+  },
+  "import defaultdict": {
+    "prefix": "idd",
+    "body": "from collections import defaultdict",
+    "description": "Code snippet to import defaultdict"
+  },
+  "import deque": {
+    "prefix": "idq",
+    "body": "from collections import deque",
+    "description": "Code snippet to import deque"
+  },
+  "import accumulate": {
+    "prefix": "iac",
+    "body": "from itertools import accumulate",
+    "description": "Code snippet to import accumulate"
+  },
+  "import pairwise": {
+    "prefix": "ipw",
+    "body": "from itertools import pairwise",
+    "description": "Code snippet to import pairwise"
+  },
+  "import product": {
+    "prefix": "ipd",
+    "body": "from itertools import product",
+    "description": "Code snippet to import product"
+  },
+  "import permutations": {
+    "prefix": "ipm",
+    "body": "from itertools import permutations",
+    "description": "Code snippet to import permutations"
+  },
+  "import combinations": {
+    "prefix": "icb",
+    "body": "from itertools import combinations",
+    "description": "Code snippet to import combinations"
+  },
+  "import combinations_with_replacement": {
+    "prefix": "icbr",
+    "body": "from itertools import combinations_with_replacement",
+    "description": "Code snippet to import combinations_with_replacement"
+  },
+  "import cache": {
+    "prefix": "icache",
+    "body": "from functools import lru_cache",
+    "description": "Code snippet to import lru_cache"
+  }
+}

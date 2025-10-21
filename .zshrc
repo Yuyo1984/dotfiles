@@ -1,12 +1,7 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
+# Amazon Q pre block. Keep at the top of this file.
+[[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh"
 # Lines configured by zsh-newuser-install
-export EDITOR=nvim #エディタをnvimに設定
+export EDITOR=vim #エディタをvimに設定
 export LANG=ja_JP.UTF-8 #文字コードをUTF-8に設定
 export MAILCHECK=0 #警告を出さなくさせる
 
@@ -22,14 +17,6 @@ path=(
   /sbin
   /Library/Apple/usr/bin
 )
-
-# プロンプト設定
-#PROMPT="%F{036}%B%~%b%f 
-# %% "
-
-
-# プロンプトの右側(RPROMPT)にメソッドの結果を表示させる
-# RPROMPT='`rprompt-git-current-branch`'
 
 # history
 HISTFILE=~/.zsh_history
@@ -49,9 +36,7 @@ autoload zed
 autoload -Uz compinit
 compinit
 
-#
 # setopt
-#
 
 # cdの省略
 setopt auto_cd
@@ -72,37 +57,41 @@ zstyle ':completion:*:default' menu select=1
 autoload colors
 zstyle ':completion:*' list-colors "${LS_COLORS}"
 
-
 #エイリアス
 alias ls="lsd"
 alias la='ls -aG'
 alias ll='ls -lG'
-alias vi='nvim'
-alias vz='vi ~/dotfiles/.zshrc'
-alias archive='cd ~/programming/procon-archive'
-alias vim='/usr/local/bin/vim'
-alias pabc='cd ~/atcoder-python/abc'
+alias an='nvim'
+alias vz='nvim ~/dotfiles/.zshrc'
+alias pabc='cd ~/Compro/abc'
 alias mkCompro='source ~/Compro/atc-venv/bin/activate'
-alias cw='~/atcoder-python/tools/create_python_template.sh main.py & nvim main.py'
-alias tp='oj t -c "python3 main.py" -d ./test'
-alias sp='acc s main.py -- -l 5055 -w 0 -y --no-open'
-alias spp='acc s main.py -- --guess-python-interpreter pypy -w 0 -y --no-open'
-alias sc='~/Compro/tools/new.zsh'
-alias sw='acss watch'
+alias wcpy='nvim main.py'
+alias wcrb='nvim main.rb'
+alias wcpp='nvim main.cpp'
+alias mcpp='g++ -o main main.cpp'
+alias tsrb='oj t -c "ruby main.rb" -d ./test' 
+alias tspy='oj t -c "python3 main.py" -d ./test'
+alias sbrb='acc s main.rb -- -l 5018 -w 0 -y --no-open'
+alias sbpy='acc s main.py -- -l 5055 -w 0 -y --no-open'
+alias sbpp='acc s main.py -- --guess-python-interpreter pypy -w 0 -y --no-open'
+alias stcon='~/Compro/tools/new.zsh'
+alias sbwt='acss watch'
 alias debug='python3 -m pdb main.py'
-alias cb='cd ~/ac-problems-contest-builder'
+alias makecon='cd ~/ac-problems-contest-builder'
+alias jsl='osascript -l JavaScript'
 alias cn="cargo new --bin"
 alias cr="cargo run"
 alias cb="cargo build"
 alias cdcp="bat main.py | pbcopy"
 alias getlib='cp -r ~/Compro/ac-library/atcoder .'
+alias teee='tee >(pbcopy)'
+alias md='glow -p -'
+alias j='z'
+
 # マークダウンファイルを見るコマンド
 function mdview() {
     markdown $1 | lynx -stdin
 }
-
-# cdの後にlsを実行
-# chpwd() { ls -ltrG  }
 
 # 補完候補のメニュー選択で、矢印キーの代わりにhjklで移動出来るようにする。
 zmodload zsh/complist
@@ -113,11 +102,6 @@ bindkey -M menuselect 'l' vi-forward-char
 
 
 # End of lines added by compinstall
-
-# export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
-
-# export PATH="$HOME/.rbenv/bin:$PATH"
-# eval "$(rbenv init - zsh)"
 
 # コマンドの実行ごとに改行
 function precmd() {
@@ -137,33 +121,29 @@ setopt prompt_subst
 export TERM=xterm-256color
 
 export DOCKER_HOST=unix:///var/run/docker.sock
-#export DOCKER_HOST=unix://$HOME/.lima/docker/sock/docker.sock
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # コマンド履歴検索Pecoの設定
-# function peco-history-selection() {
-#    BUFFER=`history -n 1 | tail -r  | awk '!a[$0]++' | peco`
-#    CURSOR=$#BUFFER
-#    zle reset-prompt
-#}
+function peco-history-selection() {
+   BUFFER=`history -n 1 | tail -r  | awk '!a[$0]++' | peco`
+   CURSOR=$#BUFFER
+   zle reset-prompt
+}
 
-# zle -N peco-history-selection
-# bindkey '^R' peco-history-selection
+zle -N peco-history-selection
+bindkey '^R' peco-history-selection
 
 # ghの補完
 eval "$(gh completion -s zsh)"
 
 # zの設定
-# . `brew --prefix`/etc/profile.d/z.sh
+. ~/z/z.sh
 
 # 起動したらRustのパスを通す
-# source "$HOME/.cargo/env"
+source "$HOME/.cargo/env"
 
 export PATH="/usr/local/bin:$PATH"
-#export PATH="/opt/homebrew/bin:/usr/local/bin:/Library/Tex/texbin:$PATH"
-#export PATH="/System/Volumes/Data/Users/user1/Library/Python/3.12/bin:$PATH"
-#export PATH="/Users/user1/Library/Python/3.12/bin:$PATH"
 export PATH="$(brew --prefix python)/libexec/bin:$PATH"
 
 # 入った時にanyenvをリロード
@@ -172,13 +152,13 @@ export PATH="$HOME/.anyenv/bin:$PATH"
 
 . "$HOME/.cargo/env"
 
-export PATH="$HOME/.gem/ruby/3.2.0/bin:$PATH"
 export GOPATH="$HOME/go"
 # export PATH="$GOPATH/bin:$PATH"
 export PATH="$HOME/cf_v1.0.0_darwin_64:$PATH"
 
-export PATH="/usr/local/bin:$PATH"
+export PATH=$PATH:/usr/local/texlive/2024/bin/universal-darwin
 
+export PATH="/usr/local/opt/unzip/bin:$PATH"
 
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
@@ -194,9 +174,10 @@ autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 
 # Load the pure theme, with zsh-async library that's bundled with it.
-#zinit ice pick"async.zsh" src"pure.zsh"
-#zinit light sindresorhus/pure
-zinit light romkatv/powerlevel10k
+zinit ice pick"async.zsh" src"pure.zsh"
+zinit light sindresorhus/pure
+
+# zinit light spaceship-prompt/spaceship-prompt
 
 # Load a few important annexes, without Turbo
 # (this is currently required for annexes)
@@ -206,10 +187,13 @@ zinit light-mode for \
     zdharma-continuum/zinit-annex-patch-dl \
     zdharma-continuum/zinit-annex-rust
 zinit light zsh-users/zsh-syntax-highlighting
-zinit light zsh-users/zsh-autosuggestions
+# zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
 zinit light zdharma/history-search-multi-word
 ### End of Zinit's installer chunk
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+export PATH="$HOME/local/bin:$PATH"
+export PATH="$HOME/local/bin:$PATH"
+
+# Amazon Q post block. Keep at the bottom of this file.
+[[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh"
