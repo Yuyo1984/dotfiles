@@ -1,0 +1,13 @@
+[user]
+	name = Yuyo1984
+	email = pyyuyo1984@gmail.com
+[core]
+	excludesfile = /Users/user1/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/user1/.stCommitMsg

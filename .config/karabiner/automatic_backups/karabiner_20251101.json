@@ -61,7 +61,7 @@
                 }
             ],
             "name": "Default profile",
-            "virtual_hid_keyboard": { "keyboard_type_v2": "jis" }
+            "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" }
         },
         {
             "complex_modifications": {
@@ -1683,19 +1683,16 @@
                             "to": [{ "key_code": "p" }]
                         }
                     ]
-                },
-                {
-                    "disable_built_in_keyboard_if_exists": true,
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "product_id": 33,
-                        "vendor_id": 1278
-                    },
-                    "manipulate_caps_lock_led": false
                 }
             ],
             "name": "Kind",
             "selected": true,
+            "simple_modifications": [
+                {
+                    "from": { "key_code": "a" },
+                    "to": [{ "key_code": "e" }]
+                }
+            ],
             "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" }
         }
     ]

@@ -1691,7 +1691,7 @@
                         "product_id": 33,
                         "vendor_id": 1278
                     },
-                    "manipulate_caps_lock_led": false
+                    "ignore": true
                 }
             ],
             "name": "Kind",
